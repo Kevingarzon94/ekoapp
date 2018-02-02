@@ -83,7 +83,7 @@ async function sessionIdreturn () {
 
 async function loginValidation(sessionId,email){
 
-    var webMethod = "https://www.impeltechnology.com/rest/api/selectQuery?query=select loginName,nombre from Proveedor where loginName = '" + email + "'&sessionId="+ sessionId +"&output=json&maxRows=3000";
+    var webMethod = "https://www.impeltechnology.com/rest/api/selectQuery?query=select loginName,nombre,R6919788 from Proveedor where loginName = '" + email + "'&sessionId="+ sessionId +"&output=json&maxRows=3000";
     webMethod = encodeURI(webMethod);
     var query;
     var topmost = frameModule.topmost();
@@ -95,6 +95,7 @@ async function loginValidation(sessionId,email){
         if (obj.length > 0) {
             
             appSettings.setString('nombreprov', obj[0][1]);
+            appSettings.setNumber('idVehiculo', obj[0][2]);
 
             alert("Bienvenido ");
             topmost.navigate("home/home-page");

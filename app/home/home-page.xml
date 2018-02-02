@@ -25,7 +25,7 @@
             </GridLayout>
          <StackLayout backgroundColor="white" style="height: 80%">
            
-            <Button color="darkgray" text="Orden de Servicio" backgroundColor="#ECECE5" class="btn"/>
+            <Button color="darkgray" text="Orden de Servicio" backgroundColor="#ECECE5" class="btn" tap="{{ navigatetoOrdens}}"/>
             <Button color="darkgray" text="Notificaciones" backgroundColor="#ECECE5" class="btn"/>
             <Button color="darkgray" text="Pagos" backgroundColor="#ECECE5" class="btn"/>
             <Button color="darkgray" text="Novedades" backgroundColor="#ECECE5" class="btn"/>
