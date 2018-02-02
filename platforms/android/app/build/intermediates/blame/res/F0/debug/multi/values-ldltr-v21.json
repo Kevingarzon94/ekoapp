@@ -1,0 +1,26 @@
+[
+    {
+        "outputFile": "/home/kevin/appekoConductor/platforms/android/app/build/intermediates/incremental/mergeF0DebugResources/merged.dir/values-ldltr-v21/values-ldltr-v21.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 112,
+                    "endOffset": 163
+                },
+                "from": {
+                    "file": "/home/kevin/.android/build-cache/bef0b3ac6f6ebb94ac8708fa074b993ed2ddddbb/output/res/values-ldltr-v21/values-ldltr-v21.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 112,
+                        "endOffset": 163
+                    }
+                }
+            }
+        ]
+    }
+]
