@@ -1,0 +1,26 @@
+<Page class="page"
+    navigatingTo="onNavigatingTo"  
+    xmlns="http://schemas.nativescript.org/tns.xsd">
+
+    <!--Add your page content here-->
+<ActionBar title="{{ nombreConductor }}">
+  <ActionItem tap="onBack"
+      ios.systemIcon="9" ios.position="left"
+      android.systemIcon="ic_menu_back" android.position="actionBar"></ActionItem>
+<ActionItem ios.systemIcon="2" ios.position="right" >
+    <Image src="~/images/icono_eko_mini.png" class="action-image" ios:horizontalAlignment="right"
+    android:horizontalAlignment="right"></Image>
+</ActionItem>  
+    <!--<Image src="~/images/icono_eko_mini.png" class="action-image"></Image> -->
+</ActionBar>
+<FlexboxLayout flexDirection="column">
+
+         <StackLayout backgroundColor="white" style="height: 80%">
+           
+            <Button color="darkgray" text="Ordenes Confirmadas" backgroundColor="#ECECE5" class="btn" tap="confirmadasOrdenes"/>
+            <Button color="darkgray" text="Ordenes Rechazadas" backgroundColor="#ECECE5" class="btn" tap="rechazadasOrdenes"/>
+            <Button color="darkgray" text="Historial de Ordenes" backgroundColor="#ECECE5" class="btn" tap="historialOrdenes"/>
+
+        </StackLayout>
+    </FlexboxLayout>
+</Page>

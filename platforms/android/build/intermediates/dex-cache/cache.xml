@@ -10,5 +10,122 @@
         sha1="746274223beb11b1cda7854d7eec3038695c2c93">
         <dex dex="/home/kevin/appekoConductor/platforms/android/app/build/intermediates/pre-dexed/F0/debug/classes_65f73b913b87ca4dcc22fc2ab9b56115e30080b9.jar" />
     </item>
+    <item
+        is-multidex="false"
+        jar="/home/kevin/.android/build-cache/d3941ff3d490b6aa8b6608e034f11872dc094165/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1d2ee92c55b107ec366ddb534edae4548201e25b">
+        <dex dex="/home/kevin/appekoConductor/platforms/android/app/build/intermediates/pre-dexed/F0F1F2/debug/classes_d4675b942823d49511e08ebe71f9c43191beeced.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/kevin/.android/build-cache/18bc58b2bdc0c198811577a5a5399fa3c5375b79/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ce22401852bd9e460265a9a1567f7cedb6fc91b9">
+        <dex dex="/home/kevin/appekoConductor/platforms/android/app/build/intermediates/pre-dexed/F0F1/debug/classes_4c21b1541101565dd95a730a6595fdee63f9d4d7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/kevin/.android/build-cache/e73b15c3de2bac65202eb2d2aaf678bac12f4f44/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ae411cd0dd58ad905486a0bc7931ec5adf3a2d13">
+        <dex dex="/home/kevin/appekoConductor/platforms/android/app/build/intermediates/pre-dexed/F0F1/debug/classes_142f0f6434c06493c960049ddfcf9b1548c2ac85.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/kevin/.android/build-cache/a2a780169f11f78dbd0b174a23e7b345b58a0581/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="16dfa5cc51cd9a9e2809e48ceb26724a29861fdd">
+        <dex dex="/home/kevin/appekoConductor/platforms/android/app/build/intermediates/pre-dexed/F0F1/debug/classes_d86baadeff369cb52688576ec458eb003d968942.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/kevin/.android/build-cache/2455bc1a1ec842fe0c67162825e3622278c7011d/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0eed9e468431f447bf63f3a0cee23418e8994411">
+        <dex dex="/home/kevin/appekoConductor/platforms/android/app/build/intermediates/pre-dexed/F0F1/debug/classes_193ff0c826465e94aa2f821827707d83a312ed96.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/kevin/.android/build-cache/ef45aaff592c022dac080b7f084d500140b4fdc0/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="9ffa5b2e37c626bd25cfbff4df099cdf068595f9">
+        <dex dex="/home/kevin/appekoConductor/platforms/android/app/build/intermediates/pre-dexed/F0F1/debug/classes_080ad498afaa2d58539c59210fdc02bb84bb36ef.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/kevin/.android/build-cache/fa799edce887be1f349ed70efe9d1329166ac080/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="cf47665b22d68f560d1b8fa2e51b8c23a34574f2">
+        <dex dex="/home/kevin/appekoConductor/platforms/android/app/build/intermediates/pre-dexed/F0F1F2/debug/classes_25ef2739a5396893676bb30c0ea51a3f49fa6e0b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/kevin/.android/build-cache/f0769339babf9450069c2203cdb5758cd542a70c/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ef0e926de4ec20c998d1abd23231c5b37739ec21">
+        <dex dex="/home/kevin/appekoConductor/platforms/android/app/build/intermediates/pre-dexed/F0F1F2/debug/classes_5e75f02b35e25456d6147f304c19d5009367df2b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/kevin/.android/build-cache/e70a0942bccf9f4011bfacd3a2b01202443d129f/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="556dc4e7734c7445d7310a625fad89c5be6728b2">
+        <dex dex="/home/kevin/appekoConductor/platforms/android/app/build/intermediates/pre-dexed/F0F1/debug/classes_f019216c32af6ce265b52d9b54bfd85c0ba16ed5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/kevin/.android/build-cache/259e2792d12b862b9c4fb915ce8b1a5d008a207c/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="21ece50b870a8bea45608a6748ad60112d5d9ed1">
+        <dex dex="/home/kevin/appekoConductor/platforms/android/app/build/intermediates/pre-dexed/F0F1/debug/classes_ca9839b311615e64eeadf42a1f6e9768fb9fde99.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/kevin/.android/build-cache/e9122cee2fdd827880cb180452e3c5a4cb59294b/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="73d3d4e86f3d6da0dd1987f7cff9fb07d5a36132">
+        <dex dex="/home/kevin/appekoConductor/platforms/android/app/build/intermediates/pre-dexed/F0F1F2/debug/classes_9c9a880154dcf733ab7d590d8019714815478fbe.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/kevin/.android/build-cache/924b0e98b5b5a1e77f666b6601263a36963f92fb/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4df8aad66215f497722e05820383f9ff04796fea">
+        <dex dex="/home/kevin/appekoConductor/platforms/android/app/build/intermediates/pre-dexed/F0F1/debug/classes_90ec5977f0607c0aa820211d489c6cef6bc982a4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/kevin/.android/build-cache/53f84d648461e6251fc550ce76f7a87f3e56bc60/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7ed36108b22a98a311676b5ad153d1e3587fcd16">
+        <dex dex="/home/kevin/appekoConductor/platforms/android/app/build/intermediates/pre-dexed/F0F1F2/debug/classes_fec80457789bdac36debf9ad9e5c162c097d7229.jar" />
+    </item>
 
 </items>

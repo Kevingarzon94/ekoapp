@@ -1,11 +1,23 @@
 [
     {
+        "name": "nativescript-geolocation",
+        "directory": "../../node_modules/nativescript-geolocation"
+    },
+    {
         "name": "nativescript-google-maps-sdk",
         "directory": "../../node_modules/nativescript-google-maps-sdk"
     },
     {
+        "name": "nativescript-loading-indicator",
+        "directory": "../../node_modules/nativescript-loading-indicator"
+    },
+    {
         "name": "nativescript-permissions",
         "directory": "../../node_modules/nativescript-permissions"
+    },
+    {
+        "name": "nativescript-pro-ui",
+        "directory": "../../node_modules/nativescript-pro-ui"
     },
     {
         "name": "nativescript-theme-core",

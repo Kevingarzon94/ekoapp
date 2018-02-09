@@ -6,6 +6,10 @@
     <!--Add your page content here-->
 <ActionBar title="{{ nombreConductor }}">
 <ActionItem ios.systemIcon="2" ios.position="right" > 
+    <Image src="~/images/descarga.png" class="action-image" ios:horizontalAlignment="right"
+    android:horizontalAlignment="right" tap="{{ navigatetoPerfil }}"></Image>
+</ActionItem>
+<ActionItem ios.systemIcon="2" ios.position="right" > 
     <Image src="~/images/icono_eko_mini.png" class="action-image" ios:horizontalAlignment="right"
     android:horizontalAlignment="right"></Image>
 </ActionItem>  
@@ -26,10 +30,10 @@
          <StackLayout backgroundColor="white" style="height: 80%">
            
             <Button color="darkgray" text="Orden de Servicio" backgroundColor="#ECECE5" class="btn" tap="{{ navigatetoOrdens}}"/>
-            <Button color="darkgray" text="Notificaciones" backgroundColor="#ECECE5" class="btn"/>
-            <Button color="darkgray" text="Pagos" backgroundColor="#ECECE5" class="btn"/>
+            <Button color="darkgray" text="Notificaciones" backgroundColor="#ECECE5" class="btn" tap="{{ navigatetoNotification}}"/>
+            <Button color="darkgray" text="Pagos" backgroundColor="#ECECE5" class="btn" tap="{{ navigatetoPayments }}"/>
             <Button color="darkgray" text="Novedades" backgroundColor="#ECECE5" class="btn"/>
-            <Button color="darkgray" text="Salir" backgroundColor="#ECECE5" class="btn"/>
+            <Button color="darkgray" text="Salir" backgroundColor="#ECECE5" class="btn" tap="{{ back }}"/>
         </StackLayout>
     </FlexboxLayout>
 </Page>

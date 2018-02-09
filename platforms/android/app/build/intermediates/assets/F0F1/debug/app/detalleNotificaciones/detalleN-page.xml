@@ -1,0 +1,29 @@
+<Page class="page"
+    navigatingTo="onNavigatingTo"  
+    xmlns="http://schemas.nativescript.org/tns.xsd"
+	xmlns:df="nativescript-pro-ui/dataform">
+
+<ActionBar title="Ordenes Confirmadas">
+  <ActionItem tap="onBack"
+      ios.systemIcon="9" ios.position="left"
+      android.systemIcon="ic_menu_back" android.position="actionBar"></ActionItem>
+<ActionItem ios.systemIcon="2" ios.position="right" >
+    <Image src="~/images/icono_eko_mini.png" class="action-image" ios:horizontalAlignment="right"
+    android:horizontalAlignment="right"></Image>
+</ActionItem>  
+    <!--<Image src="~/images/icono_eko_mini.png" class="action-image"></Image> -->
+</ActionBar>
+
+	<ScrollView>
+
+			<ListView id="listview" class="list-group" itemTap="onItemTap" style="height:1150px">
+				<ListView.itemTemplate>
+					<FlexboxLayout flexDirection="row" class="list-group-item">
+						<Label text="orden #" class="list-group-item-heading" verticalAlignment="center" style="width: 60%" />
+      					<Label text="{{ noOrden }}" class="list-group-item-heading" verticalAlignment="center" style="width: 60%" />
+					</FlexboxLayout>
+				</ListView.itemTemplate>
+			</ListView>
+
+	</ScrollView>
+</Page>

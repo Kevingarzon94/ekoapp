@@ -1,0 +1,76 @@
+<Page class="page"
+    navigatingTo="onNavigatingTo"  
+    xmlns="http://schemas.nativescript.org/tns.xsd"
+	xmlns:df="nativescript-pro-ui/dataform">
+
+    <!--Add your page content here-->
+<ActionBar title="Detalle Orden de Servicio">
+  <ActionItem tap="onBack"
+      ios.systemIcon="9" ios.position="left"
+      android.systemIcon="ic_menu_back" android.position="actionBar"></ActionItem>
+<ActionItem ios.systemIcon="2" ios.position="right" >
+    <Image src="~/images/icono_eko_mini.png" class="action-image" ios:horizontalAlignment="right"
+    android:horizontalAlignment="right"></Image>
+</ActionItem>  
+    <!--<Image src="~/images/icono_eko_mini.png" class="action-image"></Image> -->
+</ActionBar>
+ 
+	<FlexboxLayout flexDirection="column" >
+		<StackLayout orientation="horizontal" style="margin-left: 50px; margin-top: 40px;">
+			<Label text="Ofertante: " style="font-weight: bold;"/>
+			<Label id="ofertante"/>
+		</StackLayout>
+		
+		<StackLayout class="hr-light"></StackLayout>
+
+		<StackLayout orientation="horizontal" style="margin-left: 50px; margin-top: 40px;">
+			<Label text="Tipo de Carga: " style="font-weight: bold;"/>
+			<Label text="" />
+		</StackLayout>
+		<StackLayout class="hr-light"></StackLayout>
+
+		<StackLayout orientation="horizontal" style="margin-left: 50px; margin-top: 40px;">
+			<Label text="Lugar. Carga: " style="font-weight: bold;"/>
+			<Label text="" />
+		</StackLayout>
+		<StackLayout class="hr-light"></StackLayout>
+
+		<StackLayout orientation="horizontal" style="margin-left: 50px; margin-top: 40px;">
+			<Label text="Hr/Fecha Carga: " style="font-weight: bold;"/>
+			<Label text="" />
+		</StackLayout>
+		<StackLayout class="hr-light"></StackLayout>
+
+		<StackLayout orientation="horizontal" style="margin-left: 50px; margin-top: 40px;">
+			<Label text="Lugar. Descarga: " style="font-weight: bold;"/>
+			<Label text="" />
+		</StackLayout>
+		<StackLayout class="hr-light"></StackLayout>
+
+		<StackLayout orientation="horizontal" style="margin-left: 50px; margin-top: 40px;">
+			<Label text="Hr/Fecha Descarga: " style="font-weight: bold;"/>
+			<Label text="" />
+		</StackLayout>
+		<StackLayout class="hr-light"></StackLayout>
+
+		<StackLayout orientation="horizontal" style="margin-left: 50px; margin-top: 40px;">
+			<Label text="Num Entregas: " style="font-weight: bold;"/>
+			<Label text="" />
+		</StackLayout>
+
+		<StackLayout class="hr-light"></StackLayout>
+
+		<StackLayout orientation="horizontal" style="margin-left: 50px; margin-top: 40px;">
+			<Label text="Valor del Servicio: " style="font-weight: bold;"/>
+			<Label text="" />
+		</StackLayout>
+		
+		<StackLayout class="hr-light"></StackLayout>
+
+		<StackLayout orientation="horizontal" style="margin-top: 40px;">
+		
+		<Button id="accept" text="Aceptar" tap="onButtonTap" class="btn" style="width: 45%; margin-right:10px; margin-left:20px;" color="white" backgroundColor="#023e56"/>
+		<Button id="refuse" text="Rechazar" tap="onButtonTap1" class="btn" style="width: 45%; margin-right:10px; margin-left:20px;" backgroundColor="#023e56" color="white"/>
+		</StackLayout>
+	</FlexboxLayout>
+</Page>

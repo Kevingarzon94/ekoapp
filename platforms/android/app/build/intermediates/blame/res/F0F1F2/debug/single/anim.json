@@ -1,0 +1,74 @@
+[
+    {
+        "merged": "/home/kevin/appekoConductor/platforms/android/app/build/intermediates/res/merged/F0F1F2/debug/anim/abc_shrink_fade_out_from_bottom.xml",
+        "source": "/home/kevin/.android/build-cache/bef0b3ac6f6ebb94ac8708fa074b993ed2ddddbb/output/res/anim/abc_shrink_fade_out_from_bottom.xml"
+    },
+    {
+        "merged": "/home/kevin/appekoConductor/platforms/android/app/build/intermediates/res/merged/F0F1F2/debug/anim/abc_popup_exit.xml",
+        "source": "/home/kevin/.android/build-cache/bef0b3ac6f6ebb94ac8708fa074b993ed2ddddbb/output/res/anim/abc_popup_exit.xml"
+    },
+    {
+        "merged": "/home/kevin/appekoConductor/platforms/android/app/build/intermediates/res/merged/F0F1F2/debug/anim/abc_fade_out.xml",
+        "source": "/home/kevin/.android/build-cache/bef0b3ac6f6ebb94ac8708fa074b993ed2ddddbb/output/res/anim/abc_fade_out.xml"
+    },
+    {
+        "merged": "/home/kevin/appekoConductor/platforms/android/app/build/intermediates/res/merged/F0F1F2/debug/anim/abc_slide_in_bottom.xml",
+        "source": "/home/kevin/.android/build-cache/bef0b3ac6f6ebb94ac8708fa074b993ed2ddddbb/output/res/anim/abc_slide_in_bottom.xml"
+    },
+    {
+        "merged": "/home/kevin/appekoConductor/platforms/android/app/build/intermediates/res/merged/F0F1F2/debug/anim/design_bottom_sheet_slide_out.xml",
+        "source": "/home/kevin/.android/build-cache/02773198ca7fb4fa93d2df4b504ea7c6db86d2ac/output/res/anim/design_bottom_sheet_slide_out.xml"
+    },
+    {
+        "merged": "/home/kevin/appekoConductor/platforms/android/app/build/intermediates/res/merged/F0F1F2/debug/anim/abc_grow_fade_in_from_bottom.xml",
+        "source": "/home/kevin/.android/build-cache/bef0b3ac6f6ebb94ac8708fa074b993ed2ddddbb/output/res/anim/abc_grow_fade_in_from_bottom.xml"
+    },
+    {
+        "merged": "/home/kevin/appekoConductor/platforms/android/app/build/intermediates/res/merged/F0F1F2/debug/anim/design_fab_out.xml",
+        "source": "/home/kevin/.android/build-cache/02773198ca7fb4fa93d2df4b504ea7c6db86d2ac/output/res/anim/design_fab_out.xml"
+    },
+    {
+        "merged": "/home/kevin/appekoConductor/platforms/android/app/build/intermediates/res/merged/F0F1F2/debug/anim/abc_slide_in_top.xml",
+        "source": "/home/kevin/.android/build-cache/bef0b3ac6f6ebb94ac8708fa074b993ed2ddddbb/output/res/anim/abc_slide_in_top.xml"
+    },
+    {
+        "merged": "/home/kevin/appekoConductor/platforms/android/app/build/intermediates/res/merged/F0F1F2/debug/anim/design_bottom_sheet_slide_in.xml",
+        "source": "/home/kevin/.android/build-cache/02773198ca7fb4fa93d2df4b504ea7c6db86d2ac/output/res/anim/design_bottom_sheet_slide_in.xml"
+    },
+    {
+        "merged": "/home/kevin/appekoConductor/platforms/android/app/build/intermediates/res/merged/F0F1F2/debug/anim/abc_slide_out_top.xml",
+        "source": "/home/kevin/.android/build-cache/bef0b3ac6f6ebb94ac8708fa074b993ed2ddddbb/output/res/anim/abc_slide_out_top.xml"
+    },
+    {
+        "merged": "/home/kevin/appekoConductor/platforms/android/app/build/intermediates/res/merged/F0F1F2/debug/anim/design_fab_in.xml",
+        "source": "/home/kevin/.android/build-cache/02773198ca7fb4fa93d2df4b504ea7c6db86d2ac/output/res/anim/design_fab_in.xml"
+    },
+    {
+        "merged": "/home/kevin/appekoConductor/platforms/android/app/build/intermediates/res/merged/F0F1F2/debug/anim/design_snackbar_out.xml",
+        "source": "/home/kevin/.android/build-cache/02773198ca7fb4fa93d2df4b504ea7c6db86d2ac/output/res/anim/design_snackbar_out.xml"
+    },
+    {
+        "merged": "/home/kevin/appekoConductor/platforms/android/app/build/intermediates/res/merged/F0F1F2/debug/anim/drawer_slide_in_top.xml",
+        "source": "/home/kevin/.android/build-cache/a2a780169f11f78dbd0b174a23e7b345b58a0581/output/res/anim/drawer_slide_in_top.xml"
+    },
+    {
+        "merged": "/home/kevin/appekoConductor/platforms/android/app/build/intermediates/res/merged/F0F1F2/debug/anim/abc_slide_out_bottom.xml",
+        "source": "/home/kevin/.android/build-cache/bef0b3ac6f6ebb94ac8708fa074b993ed2ddddbb/output/res/anim/abc_slide_out_bottom.xml"
+    },
+    {
+        "merged": "/home/kevin/appekoConductor/platforms/android/app/build/intermediates/res/merged/F0F1F2/debug/anim/design_snackbar_in.xml",
+        "source": "/home/kevin/.android/build-cache/02773198ca7fb4fa93d2df4b504ea7c6db86d2ac/output/res/anim/design_snackbar_in.xml"
+    },
+    {
+        "merged": "/home/kevin/appekoConductor/platforms/android/app/build/intermediates/res/merged/F0F1F2/debug/anim/drawer_slide_out_top.xml",
+        "source": "/home/kevin/.android/build-cache/a2a780169f11f78dbd0b174a23e7b345b58a0581/output/res/anim/drawer_slide_out_top.xml"
+    },
+    {
+        "merged": "/home/kevin/appekoConductor/platforms/android/app/build/intermediates/res/merged/F0F1F2/debug/anim/abc_fade_in.xml",
+        "source": "/home/kevin/.android/build-cache/bef0b3ac6f6ebb94ac8708fa074b993ed2ddddbb/output/res/anim/abc_fade_in.xml"
+    },
+    {
+        "merged": "/home/kevin/appekoConductor/platforms/android/app/build/intermediates/res/merged/F0F1F2/debug/anim/abc_popup_enter.xml",
+        "source": "/home/kevin/.android/build-cache/bef0b3ac6f6ebb94ac8708fa074b993ed2ddddbb/output/res/anim/abc_popup_enter.xml"
+    }
+]

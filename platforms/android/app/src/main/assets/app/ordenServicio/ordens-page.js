@@ -77,7 +77,7 @@ function onMapReady(args) {
   
     console.log("Setting a marker...");
     var marker = new mapsModule.Marker();
-    marker.position = mapsModule.Position.positionFromLatLng(-33.86, 151.20);
+    marker.position = mapsModule.Position.positionFromLatLng(4.7341279, -74.0242537);
     marker.title = "Sydney";
     marker.snippet = "Australia";
     marker.userData = { index : 1};
@@ -94,14 +94,20 @@ function onMapReady(args) {
       console.log("Camera changed: " + JSON.stringify(args.camera)); 
   }
   function ontapList(args){
-    appSettings.setNumber('numberO', args.index);
+    appSettings.setNumber('numberO', args.object.items[args.index].Norden);
+
   }
   function onButtoTapOrder() {
-      //alert("Este " + appSettings.getNumber('numberO', 123));
+    var key = 1;
+    appSettings.setNumber('key', key);      
+    var topmost = frameModule.topmost();
+    topmost.navigate("detalleos/detalle-page");     
+    
   }
   function onBack(){
-    var topmost = frameModule.topmost();
-    topmost.goBack();
+    var topmost = frameModule.topmost(); 
+    topmost.navigate("home/home-page");     
+  
   }
  async function onInitserOrders () {
     var sessionId = appSettings.getString('sessionId', 'defaultValue');
