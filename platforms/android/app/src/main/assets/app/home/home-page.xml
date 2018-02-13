@@ -22,18 +22,16 @@
              <maps:mapView latitude="{{ latitude }}" longitude="{{ longitude }}" mapAnimationsEnabled="{{ mapAnimationsEnabled }}"
                                     zoom="{{ zoom }}" bearing="{{ bearing }}" 
                                     tilt="{{ tilt }}" padding="{{ padding }}" mapReady="onMapReady"  
-                                markerSelect="onMarkerSelect" markerBeginDragging="onMarkerBeginDragging"
-                                markerEndDragging="onMarkerEndDragging" markerDrag="onMarkerDrag"
-                                cameraChanged="onCameraChanged" />
+                                     />
 
             </GridLayout>
          <StackLayout backgroundColor="white" style="height: 80%">
            
-            <Button color="darkgray" text="Orden de Servicio" backgroundColor="#ECECE5" class="btn" tap="{{ navigatetoOrdens}}"/>
-            <Button color="darkgray" text="Notificaciones" backgroundColor="#ECECE5" class="btn" tap="{{ navigatetoNotification}}"/>
-            <Button color="darkgray" text="Pagos" backgroundColor="#ECECE5" class="btn" tap="{{ navigatetoPayments }}"/>
-            <Button color="darkgray" text="Novedades" backgroundColor="#ECECE5" class="btn"/>
-            <Button color="darkgray" text="Salir" backgroundColor="#ECECE5" class="btn" tap="{{ back }}"/>
+            <Button color="#004f73" text="Nuevos Servicios" backgroundColor="#ECECE5" class="btn" tap="{{ navigatetoOrdens}}"/>
+            <Button color="#004f73" text="Servicios" backgroundColor="#ECECE5" class="btn" tap="{{ navigatetoNotification}}"/>
+            <Button color="#004f73" text="Pagos" backgroundColor="#ECECE5" class="btn" tap="{{ navigatetoPayments }}"/>
+            <!--<Button color="#004f73" text="Novedades" backgroundColor="#ECECE5" class="btn"/> -->
+            <Button color="#004f73" text="Salir" backgroundColor="#ECECE5" class="btn" tap="{{ back }}"/>
         </StackLayout>
     </FlexboxLayout>
 </Page>

@@ -5,15 +5,12 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var content_view_1 = require("../content-view");
 var frame_1 = require("../frame");
 var action_bar_1 = require("../action-bar");
-var style_scope_1 = require("../styling/style-scope");
 var profiling_1 = require("../../profiling");
 __export(require("../content-view"));
 var PageBase = (function (_super) {
     __extends(PageBase, _super);
     function PageBase() {
-        var _this = _super.call(this) || this;
-        _this._styleScope = new style_scope_1.StyleScope();
-        return _this;
+        return _super !== null && _super.apply(this, arguments) || this;
     }
     Object.defineProperty(PageBase.prototype, "navigationContext", {
         get: function () {
@@ -22,20 +19,10 @@ var PageBase = (function (_super) {
         enumerable: true,
         configurable: true
     });
-    Object.defineProperty(PageBase.prototype, "css", {
-        get: function () {
-            return this._styleScope.css;
-        },
-        set: function (value) {
-            this._styleScope.css = value;
-            this._onCssStateChange();
-        },
-        enumerable: true,
-        configurable: true
-    });
     Object.defineProperty(PageBase.prototype, "actionBar", {
         get: function () {
             if (!this._actionBar) {
+                this.hasActionBar = true;
                 this._actionBar = new action_bar_1.ActionBar();
                 this._addView(this._actionBar);
             }
@@ -49,6 +36,7 @@ var PageBase = (function (_super) {
                 if (this._actionBar) {
                     this._removeView(this._actionBar);
                 }
+                this.hasActionBar = true;
                 this._actionBar = value;
                 this._addView(this._actionBar);
             }
@@ -83,13 +71,13 @@ var PageBase = (function (_super) {
         enumerable: true,
         configurable: true
     });
-    PageBase.prototype.addCss = function (cssString) {
-        this._styleScope.addCss(cssString);
-        this._onCssStateChange();
-    };
-    PageBase.prototype.addCssFile = function (cssFileName) {
-        this._styleScope.addCssFile(cssFileName);
-        this._onCssStateChange();
+    PageBase.prototype._addChildFromBuilder = function (name, value) {
+        if (value instanceof action_bar_1.ActionBar) {
+            this.actionBar = value;
+        }
+        else {
+            _super.prototype._addChildFromBuilder.call(this, name, value);
+        }
     };
     PageBase.prototype.getKeyframeAnimationWithName = function (animationName) {
         return this._styleScope.getKeyframeAnimationWithName(animationName);
@@ -127,100 +115,23 @@ var PageBase = (function (_super) {
         this.notify(this.createNavigatedData(PageBase.navigatedFromEvent, isBackNavigation));
         this._navigationContext = undefined;
     };
-    PageBase.prototype.showModal = function () {
-        if (arguments.length === 0) {
-            this._showNativeModalView(frame_1.topmost().currentPage, undefined, undefined, true);
-            return this;
-        }
-        else {
-            var context_1 = arguments[1];
-            var closeCallback = arguments[2];
-            var fullscreen = arguments[3];
-            var page = void 0;
-            if (arguments[0] instanceof PageBase) {
-                page = arguments[0];
-            }
-            else {
-                page = frame_1.resolvePageFromEntry({ moduleName: arguments[0] });
-            }
-            page._showNativeModalView(this, context_1, closeCallback, fullscreen);
-            return page;
-        }
-    };
-    PageBase.prototype.closeModal = function () {
-        if (this._closeModalCallback) {
-            this._closeModalCallback.apply(undefined, arguments);
-        }
-    };
-    Object.defineProperty(PageBase.prototype, "modal", {
-        get: function () {
-            return this._modal;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    PageBase.prototype._addChildFromBuilder = function (name, value) {
-        if (value instanceof action_bar_1.ActionBar) {
-            this.actionBar = value;
-        }
-        else {
-            _super.prototype._addChildFromBuilder.call(this, name, value);
-        }
-    };
-    PageBase.prototype._showNativeModalView = function (parent, context, closeCallback, fullscreen) {
-        parent._modal = this;
-        var that = this;
-        this._modalContext = context;
-        this._closeModalCallback = function () {
-            if (that._closeModalCallback) {
-                that._closeModalCallback = null;
-                that._modalContext = null;
-                that._hideNativeModalView(parent);
-                if (typeof closeCallback === "function") {
-                    closeCallback.apply(undefined, arguments);
-                }
-            }
-        };
-    };
-    PageBase.prototype._hideNativeModalView = function (parent) {
-    };
-    PageBase.prototype._raiseShownModallyEvent = function () {
-        var args = {
-            eventName: PageBase.shownModallyEvent,
-            object: this,
-            context: this._modalContext,
-            closeCallback: this._closeModalCallback
-        };
-        this.notify(args);
-    };
-    PageBase.prototype._raiseShowingModallyEvent = function () {
-        var args = {
-            eventName: PageBase.showingModallyEvent,
-            object: this,
-            context: this._modalContext,
-            closeCallback: this._closeModalCallback
-        };
-        this.notify(args);
-    };
     PageBase.prototype.eachChildView = function (callback) {
         _super.prototype.eachChildView.call(this, callback);
-        callback(this.actionBar);
+        if (this.actionBar) {
+            callback(this.actionBar);
+        }
     };
     Object.defineProperty(PageBase.prototype, "_childrenCount", {
         get: function () {
-            return (this.content ? 1 : 0) + (this.actionBar ? 1 : 0);
+            return (this.content ? 1 : 0) + (this._actionBar ? 1 : 0);
         },
         enumerable: true,
         configurable: true
     });
-    PageBase.prototype._inheritStyleScope = function (styleScope) {
-    };
     PageBase.navigatingToEvent = "navigatingTo";
     PageBase.navigatedToEvent = "navigatedTo";
     PageBase.navigatingFromEvent = "navigatingFrom";
     PageBase.navigatedFromEvent = "navigatedFrom";
-    PageBase.shownModallyEvent = "shownModally";
-    PageBase.showingModallyEvent = "showingModally";
     __decorate([
         profiling_1.profile
     ], PageBase.prototype, "onNavigatingTo", null);

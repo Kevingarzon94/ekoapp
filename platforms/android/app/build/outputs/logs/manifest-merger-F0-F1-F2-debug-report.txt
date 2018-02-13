@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/kevin/appekoConductor/platforms/android/app/src/main/AndroidManifest.xml:2:1-43:12
+ADDED from /home/kevin/appekoConductor/platforms/android/app/src/main/AndroidManifest.xml:2:1-45:12
 	package
 		ADDED from /home/kevin/appekoConductor/platforms/android/app/src/main/AndroidManifest.xml:3:2-44
 		INJECTED from /home/kevin/appekoConductor/platforms/android/app/src/main/AndroidManifest.xml
@@ -46,7 +46,7 @@ MERGED from [com.android.support:support-media-compat:25.3.1] /home/kevin/.andro
 MERGED from [com.android.support:support-core-ui:25.3.1] /home/kevin/.android/build-cache/d23c9b8f35393b48fa0629b80850aed38b53afde/output/AndroidManifest.xml:21:5-23:58
 MERGED from [com.android.support:support-core-utils:25.3.1] /home/kevin/.android/build-cache/bd45c34fd00f76b3d5ac5f189b47c04e481ceb03/output/AndroidManifest.xml:21:5-23:61
 MERGED from [com.android.support:support-compat:25.3.1] /home/kevin/.android/build-cache/99ea80e7ba65b78bd92dcf1f8004fdc1eb14416d/output/AndroidManifest.xml:21:5-23:58
-MERGED from [:nativescript-optimized:] /home/kevin/.android/build-cache/2f739e50b444de750f695e71763eb82a8ccf28ab/output/AndroidManifest.xml:7:5-9:41
+MERGED from [:nativescript-optimized:] /home/kevin/.android/build-cache/84f0f49c138bdd0336dc844e446bc7b0db7a132d/output/AndroidManifest.xml:7:5-9:41
 MERGED from [:Data-2017.1.1221-dev-release:] /home/kevin/.android/build-cache/924b0e98b5b5a1e77f666b6601263a36963f92fb/output/AndroidManifest.xml:7:5-9:41
 MERGED from [:Primitives-2017.1.1221-dev-release:] /home/kevin/.android/build-cache/a2a780169f11f78dbd0b174a23e7b345b58a0581/output/AndroidManifest.xml:7:5-9:41
 MERGED from [:List-2017.1.1221-dev-release:] /home/kevin/.android/build-cache/e73b15c3de2bac65202eb2d2aaf678bac12f4f44/output/AndroidManifest.xml:7:5-9:41
@@ -55,7 +55,7 @@ MERGED from [:Input-2017.1.1221-dev-release:] /home/kevin/.android/build-cache/1
 MERGED from [:Chart-2017.1.1221-dev-release:] /home/kevin/.android/build-cache/259e2792d12b862b9c4fb915ce8b1a5d008a207c/output/AndroidManifest.xml:7:5-9:41
 MERGED from [:Feedback-2017.1.1221-dev-release:] /home/kevin/.android/build-cache/2455bc1a1ec842fe0c67162825e3622278c7011d/output/AndroidManifest.xml:7:5-9:41
 MERGED from [:Gauges-2017.1.1221-dev-release:] /home/kevin/.android/build-cache/e70a0942bccf9f4011bfacd3a2b01202443d129f/output/AndroidManifest.xml:7:5-9:41
-MERGED from [:widgets-release:] /home/kevin/.android/build-cache/c46bcc682745402093066169ffc96cd5cee25867/output/AndroidManifest.xml:7:5-9:41
+MERGED from [:widgets-release:] /home/kevin/.android/build-cache/08b93aa3535d2e97c157b2d9cbf98d9c2d26ce71/output/AndroidManifest.xml:7:5-9:41
 	tools:overrideLibrary
 		ADDED from [com.android.support:design:25.3.1] /home/kevin/.android/build-cache/02773198ca7fb4fa93d2df4b504ea7c6db86d2ac/output/AndroidManifest.xml:23:9-59
 	android:targetSdkVersion
@@ -79,9 +79,14 @@ ADDED from /home/kevin/appekoConductor/platforms/android/app/src/main/AndroidMan
 MERGED from [com.google.android.gms:play-services-maps:11.2.2] /home/kevin/.android/build-cache/f0769339babf9450069c2203cdb5758cd542a70c/output/AndroidManifest.xml:20:5-66
 	android:name
 		ADDED from /home/kevin/appekoConductor/platforms/android/app/src/main/AndroidManifest.xml:19:19-61
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from /home/kevin/appekoConductor/platforms/android/app/src/main/AndroidManifest.xml:20:2-75
+MERGED from /home/kevin/appekoConductor/platforms/android/app/src/main/AndroidManifest.xml:20:2-75
+	android:name
+		ADDED from /home/kevin/appekoConductor/platforms/android/app/src/main/AndroidManifest.xml:20:19-73
 application
-ADDED from /home/kevin/appekoConductor/platforms/android/app/src/main/AndroidManifest.xml:21:2-42:16
-MERGED from /home/kevin/appekoConductor/platforms/android/app/src/main/AndroidManifest.xml:21:2-42:16
+ADDED from /home/kevin/appekoConductor/platforms/android/app/src/main/AndroidManifest.xml:23:2-44:16
+MERGED from /home/kevin/appekoConductor/platforms/android/app/src/main/AndroidManifest.xml:23:2-44:16
 MERGED from [com.google.android.gms:play-services-location:11.2.2] /home/kevin/.android/build-cache/e9122cee2fdd827880cb180452e3c5a4cb59294b/output/AndroidManifest.xml:4:5-19
 MERGED from [com.google.android.gms:play-services-maps:11.2.2] /home/kevin/.android/build-cache/f0769339babf9450069c2203cdb5758cd542a70c/output/AndroidManifest.xml:24:5-19
 MERGED from [com.google.android.gms:play-services-base:11.2.2] /home/kevin/.android/build-cache/d3941ff3d490b6aa8b6608e034f11872dc094165/output/AndroidManifest.xml:18:5-20:19
@@ -106,52 +111,52 @@ MERGED from [:Input-2017.1.1221-dev-release:] /home/kevin/.android/build-cache/1
 MERGED from [:Chart-2017.1.1221-dev-release:] /home/kevin/.android/build-cache/259e2792d12b862b9c4fb915ce8b1a5d008a207c/output/AndroidManifest.xml:11:5-12:19
 MERGED from [:Feedback-2017.1.1221-dev-release:] /home/kevin/.android/build-cache/2455bc1a1ec842fe0c67162825e3622278c7011d/output/AndroidManifest.xml:11:5-32:19
 MERGED from [:Gauges-2017.1.1221-dev-release:] /home/kevin/.android/build-cache/e70a0942bccf9f4011bfacd3a2b01202443d129f/output/AndroidManifest.xml:11:5-12:19
-MERGED from [:widgets-release:] /home/kevin/.android/build-cache/c46bcc682745402093066169ffc96cd5cee25867/output/AndroidManifest.xml:11:5-12:19
+MERGED from [:widgets-release:] /home/kevin/.android/build-cache/08b93aa3535d2e97c157b2d9cbf98d9c2d26ce71/output/AndroidManifest.xml:11:5-12:19
 	android:label
-		ADDED from /home/kevin/appekoConductor/platforms/android/app/src/main/AndroidManifest.xml:25:3-35
-		ADDED from /home/kevin/appekoConductor/platforms/android/app/src/main/AndroidManifest.xml:25:3-35
+		ADDED from /home/kevin/appekoConductor/platforms/android/app/src/main/AndroidManifest.xml:27:3-35
+		ADDED from /home/kevin/appekoConductor/platforms/android/app/src/main/AndroidManifest.xml:27:3-35
 	android:allowBackup
-		ADDED from /home/kevin/appekoConductor/platforms/android/app/src/main/AndroidManifest.xml:23:3-29
-		ADDED from /home/kevin/appekoConductor/platforms/android/app/src/main/AndroidManifest.xml:23:3-29
+		ADDED from /home/kevin/appekoConductor/platforms/android/app/src/main/AndroidManifest.xml:25:3-29
+		ADDED from /home/kevin/appekoConductor/platforms/android/app/src/main/AndroidManifest.xml:25:3-29
 	android:icon
-		ADDED from /home/kevin/appekoConductor/platforms/android/app/src/main/AndroidManifest.xml:24:3-32
-		ADDED from /home/kevin/appekoConductor/platforms/android/app/src/main/AndroidManifest.xml:24:3-32
+		ADDED from /home/kevin/appekoConductor/platforms/android/app/src/main/AndroidManifest.xml:26:3-32
+		ADDED from /home/kevin/appekoConductor/platforms/android/app/src/main/AndroidManifest.xml:26:3-32
 	android:theme
-		ADDED from /home/kevin/appekoConductor/platforms/android/app/src/main/AndroidManifest.xml:26:3-34
-		ADDED from /home/kevin/appekoConductor/platforms/android/app/src/main/AndroidManifest.xml:26:3-34
+		ADDED from /home/kevin/appekoConductor/platforms/android/app/src/main/AndroidManifest.xml:28:3-34
+		ADDED from /home/kevin/appekoConductor/platforms/android/app/src/main/AndroidManifest.xml:28:3-34
 	android:name
-		ADDED from /home/kevin/appekoConductor/platforms/android/app/src/main/AndroidManifest.xml:22:3-49
-		ADDED from /home/kevin/appekoConductor/platforms/android/app/src/main/AndroidManifest.xml:22:3-49
+		ADDED from /home/kevin/appekoConductor/platforms/android/app/src/main/AndroidManifest.xml:24:3-49
+		ADDED from /home/kevin/appekoConductor/platforms/android/app/src/main/AndroidManifest.xml:24:3-49
 activity#com.tns.NativeScriptActivity
-ADDED from /home/kevin/appekoConductor/platforms/android/app/src/main/AndroidManifest.xml:28:3-40:14
+ADDED from /home/kevin/appekoConductor/platforms/android/app/src/main/AndroidManifest.xml:30:3-42:14
 	android:label
-		ADDED from /home/kevin/appekoConductor/platforms/android/app/src/main/AndroidManifest.xml:30:4-49
+		ADDED from /home/kevin/appekoConductor/platforms/android/app/src/main/AndroidManifest.xml:32:4-49
 	android:configChanges
-		ADDED from /home/kevin/appekoConductor/platforms/android/app/src/main/AndroidManifest.xml:31:4-65
+		ADDED from /home/kevin/appekoConductor/platforms/android/app/src/main/AndroidManifest.xml:33:4-65
 	android:theme
-		ADDED from /home/kevin/appekoConductor/platforms/android/app/src/main/AndroidManifest.xml:32:4-44
+		ADDED from /home/kevin/appekoConductor/platforms/android/app/src/main/AndroidManifest.xml:34:4-44
 	android:name
-		ADDED from /home/kevin/appekoConductor/platforms/android/app/src/main/AndroidManifest.xml:29:4-47
+		ADDED from /home/kevin/appekoConductor/platforms/android/app/src/main/AndroidManifest.xml:31:4-47
 meta-data#SET_THEME_ON_LAUNCH
-ADDED from /home/kevin/appekoConductor/platforms/android/app/src/main/AndroidManifest.xml:34:4-87
+ADDED from /home/kevin/appekoConductor/platforms/android/app/src/main/AndroidManifest.xml:36:4-87
 	android:resource
-		ADDED from /home/kevin/appekoConductor/platforms/android/app/src/main/AndroidManifest.xml:34:50-84
+		ADDED from /home/kevin/appekoConductor/platforms/android/app/src/main/AndroidManifest.xml:36:50-84
 	android:name
-		ADDED from /home/kevin/appekoConductor/platforms/android/app/src/main/AndroidManifest.xml:34:15-49
+		ADDED from /home/kevin/appekoConductor/platforms/android/app/src/main/AndroidManifest.xml:36:15-49
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from /home/kevin/appekoConductor/platforms/android/app/src/main/AndroidManifest.xml:36:4-39:20
+ADDED from /home/kevin/appekoConductor/platforms/android/app/src/main/AndroidManifest.xml:38:4-41:20
 action#android.intent.action.MAIN
-ADDED from /home/kevin/appekoConductor/platforms/android/app/src/main/AndroidManifest.xml:37:5-57
+ADDED from /home/kevin/appekoConductor/platforms/android/app/src/main/AndroidManifest.xml:39:5-57
 	android:name
-		ADDED from /home/kevin/appekoConductor/platforms/android/app/src/main/AndroidManifest.xml:37:13-54
+		ADDED from /home/kevin/appekoConductor/platforms/android/app/src/main/AndroidManifest.xml:39:13-54
 category#android.intent.category.LAUNCHER
-ADDED from /home/kevin/appekoConductor/platforms/android/app/src/main/AndroidManifest.xml:38:5-65
+ADDED from /home/kevin/appekoConductor/platforms/android/app/src/main/AndroidManifest.xml:40:5-65
 	android:name
-		ADDED from /home/kevin/appekoConductor/platforms/android/app/src/main/AndroidManifest.xml:38:15-62
+		ADDED from /home/kevin/appekoConductor/platforms/android/app/src/main/AndroidManifest.xml:40:15-62
 activity#com.tns.ErrorReportActivity
-ADDED from /home/kevin/appekoConductor/platforms/android/app/src/main/AndroidManifest.xml:41:3-57
+ADDED from /home/kevin/appekoConductor/platforms/android/app/src/main/AndroidManifest.xml:43:3-57
 	android:name
-		ADDED from /home/kevin/appekoConductor/platforms/android/app/src/main/AndroidManifest.xml:41:13-55
+		ADDED from /home/kevin/appekoConductor/platforms/android/app/src/main/AndroidManifest.xml:43:13-55
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from /home/kevin/appekoConductor/platforms/android/app/src/F1/AndroidManifest.xml:3:5-78
 MERGED from [com.google.android.gms:play-services-maps:11.2.2] /home/kevin/.android/build-cache/f0769339babf9450069c2203cdb5758cd542a70c/output/AndroidManifest.xml:19:5-78

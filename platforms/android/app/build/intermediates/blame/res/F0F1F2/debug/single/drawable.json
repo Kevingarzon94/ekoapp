@@ -4,12 +4,12 @@
         "source": "/home/kevin/.android/build-cache/d3941ff3d490b6aa8b6608e034f11872dc094165/output/res/drawable/common_google_signin_btn_text_dark.xml"
     },
     {
-        "merged": "/home/kevin/appekoConductor/platforms/android/app/build/intermediates/res/merged/F0F1F2/debug/drawable/abc_seekbar_thumb_material.xml",
-        "source": "/home/kevin/.android/build-cache/bef0b3ac6f6ebb94ac8708fa074b993ed2ddddbb/output/res/drawable/abc_seekbar_thumb_material.xml"
-    },
-    {
         "merged": "/home/kevin/appekoConductor/platforms/android/app/build/intermediates/res/merged/F0F1F2/debug/drawable/abc_dialog_material_background.xml",
         "source": "/home/kevin/.android/build-cache/bef0b3ac6f6ebb94ac8708fa074b993ed2ddddbb/output/res/drawable/abc_dialog_material_background.xml"
+    },
+    {
+        "merged": "/home/kevin/appekoConductor/platforms/android/app/build/intermediates/res/merged/F0F1F2/debug/drawable/abc_seekbar_thumb_material.xml",
+        "source": "/home/kevin/.android/build-cache/bef0b3ac6f6ebb94ac8708fa074b993ed2ddddbb/output/res/drawable/abc_seekbar_thumb_material.xml"
     },
     {
         "merged": "/home/kevin/appekoConductor/platforms/android/app/build/intermediates/res/merged/F0F1F2/debug/drawable/common_google_signin_btn_icon_disabled.xml",

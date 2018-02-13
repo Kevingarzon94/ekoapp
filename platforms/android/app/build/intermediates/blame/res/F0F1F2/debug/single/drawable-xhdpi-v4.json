@@ -12,12 +12,12 @@
         "source": "/home/kevin/.android/build-cache/2455bc1a1ec842fe0c67162825e3622278c7011d/output/res/drawable-xhdpi-v4/ic_feedback_sync.png"
     },
     {
-        "merged": "/home/kevin/appekoConductor/platforms/android/app/build/intermediates/res/merged/F0F1F2/debug/drawable-xhdpi-v4/abc_ic_star_half_black_36dp.png",
-        "source": "/home/kevin/.android/build-cache/bef0b3ac6f6ebb94ac8708fa074b993ed2ddddbb/output/res/drawable-xhdpi-v4/abc_ic_star_half_black_36dp.png"
-    },
-    {
         "merged": "/home/kevin/appekoConductor/platforms/android/app/build/intermediates/res/merged/F0F1F2/debug/drawable-xhdpi-v4/abc_textfield_search_activated_mtrl_alpha.9.png",
         "source": "/home/kevin/.android/build-cache/bef0b3ac6f6ebb94ac8708fa074b993ed2ddddbb/output/res/drawable-xhdpi-v4/abc_textfield_search_activated_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/home/kevin/appekoConductor/platforms/android/app/build/intermediates/res/merged/F0F1F2/debug/drawable-xhdpi-v4/abc_ic_star_half_black_36dp.png",
+        "source": "/home/kevin/.android/build-cache/bef0b3ac6f6ebb94ac8708fa074b993ed2ddddbb/output/res/drawable-xhdpi-v4/abc_ic_star_half_black_36dp.png"
     },
     {
         "merged": "/home/kevin/appekoConductor/platforms/android/app/build/intermediates/res/merged/F0F1F2/debug/drawable-xhdpi-v4/abc_cab_background_top_mtrl_alpha.9.png",

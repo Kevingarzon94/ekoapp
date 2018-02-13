@@ -260,7 +260,6 @@ var GridLayoutBase = (function (_super) {
         configurable: true
     });
     GridLayoutBase.prototype.invalidate = function () {
-        this.requestLayout();
     };
     Object.defineProperty(GridLayoutBase.prototype, "rows", {
         set: function (value) {

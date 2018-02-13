@@ -12,20 +12,33 @@ public class DialogFragment_frnal_ts_helpers_l58_c38__DialogFragmentImpl extends
 		return (android.app.Dialog)com.tns.Runtime.callJSMethod(this, "onCreateDialog", android.app.Dialog.class, args);
 	}
 
+	public android.view.View onCreateView(android.view.LayoutInflater param_0, android.view.ViewGroup param_1, android.os.Bundle param_2)  {
+		java.lang.Object[] args = new java.lang.Object[3];
+		args[0] = param_0;
+		args[1] = param_1;
+		args[2] = param_2;
+		return (android.view.View)com.tns.Runtime.callJSMethod(this, "onCreateView", android.view.View.class, args);
+	}
+
 	public void onStart()  {
 		java.lang.Object[] args = null;
 		com.tns.Runtime.callJSMethod(this, "onStart", void.class, args);
 	}
 
-	public void onDestroyView()  {
+	public void onStop()  {
 		java.lang.Object[] args = null;
-		com.tns.Runtime.callJSMethod(this, "onDestroyView", void.class, args);
+		com.tns.Runtime.callJSMethod(this, "onStop", void.class, args);
 	}
 
 	public void onDismiss(android.content.DialogInterface param_0)  {
 		java.lang.Object[] args = new java.lang.Object[1];
 		args[0] = param_0;
 		com.tns.Runtime.callJSMethod(this, "onDismiss", void.class, args);
+	}
+
+	public void onDestroy()  {
+		java.lang.Object[] args = null;
+		com.tns.Runtime.callJSMethod(this, "onDestroy", void.class, args);
 	}
 
 	public boolean equals__super(java.lang.Object other) {

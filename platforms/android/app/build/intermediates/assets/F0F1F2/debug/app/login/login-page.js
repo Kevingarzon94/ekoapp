@@ -35,6 +35,8 @@ function onNavigatingTo(args) {
     You can learn more about data binding in NativeScript at
     https://docs.nativescript.org/core-concepts/data-binding.
     */
+    page.addCssFile("css/style.css");
+
     page.bindingContext = loginViewModel;
 }
 async function onSigninButtonTap (args) {
@@ -92,11 +94,10 @@ async function sessionIdreturn () {
 
 async function loginValidation(sessionId,email){
 
-    var webMethod = "https://www.impeltechnology.com/rest/api/selectQuery?query=select loginName,nombre,R6919788 from Proveedor where loginName = '" + email + "'&sessionId="+ sessionId +"&output=json&maxRows=3000";
+    var webMethod = "https://www.impeltechnology.com/rest/api/selectQuery?query=select loginName,nombre,R6919788,nit from Proveedor where loginName = '" + email + "'&sessionId="+ sessionId +"&output=json&maxRows=3000";
     webMethod = encodeURI(webMethod);
     var query;
     var topmost = frameModule.topmost();
-
     await http.request({ url: webMethod, method: "GET" }).then(function (response) {
 
         var obj = response.content.toJSON();
@@ -105,8 +106,8 @@ async function loginValidation(sessionId,email){
             
             appSettings.setString('nombreprov', obj[0][1]);
             appSettings.setNumber('idVehiculo', obj[0][2]);
+            appSettings.setString('nit', obj[0][3]);
 
-            alert("Bienvenido ");
             topmost.navigate("home/home-page");
             
         }else {

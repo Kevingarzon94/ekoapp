@@ -1,4 +1,6 @@
 {
+    "nativescript-camera": true,
+    "nativescript-directions": true,
     "nativescript-geolocation": true,
     "nativescript-google-maps-sdk": true,
     "nativescript-loading-indicator": true,
@@ -6,5 +8,6 @@
     "nativescript-pro-ui": true,
     "nativescript-theme-core": true,
     "tns-core-modules": true,
+    "nativescript-appavailability": true,
     "tns-core-modules-widgets": true
 }

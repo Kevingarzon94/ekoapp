@@ -8,6 +8,7 @@ if (global.TNS_WEBPACK) {
     global.registerModule("ui/button", function () { return require("ui/button"); });
     global.registerModule("ui/content-view", function () { return require("ui/content-view"); });
     global.registerModule("ui/date-picker", function () { return require("ui/date-picker"); });
+    global.registerModule("ui/frame", function () { return require("ui/frame"); });
     global.registerModule("ui/html-view", function () { return require("ui/html-view"); });
     global.registerModule("ui/image", function () { return require("ui/image"); });
     global.registerModule("ui/label", function () { return require("ui/label"); });

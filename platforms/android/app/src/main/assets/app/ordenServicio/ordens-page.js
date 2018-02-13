@@ -16,12 +16,16 @@ var appSettings = require('application-settings');
 const http = require("http");
 const frameModule = require("ui/frame");
 var view = require("ui/core/view");
+var geolocation = require("nativescript-geolocation");
+// require the plugin
+var Directions = require("nativescript-directions").Directions;
+
 
 
 async function onNavigatingTo(args) {
     var sessionId = appSettings.getString('sessionId', 'defaultValue');
     var placa = appSettings.getNumber('idVehiculo', 123);
-    var webMethod = "https://www.impeltechnology.com/rest/api/selectQuery?query=select Num_Servicio,R6311987,CarroceriaServ from Servicio where status=6957915 and R6947057 = " + placa + "&sessionId="+ sessionId +"&output=json&maxRows=3000";
+    var webMethod = "https://www.impeltechnology.com/rest/api/selectQuery?query=select Origen,Destino,Num_Servicio from Servicio where status=6948340 and R6947057 = " + placa + " order by Num_Servicio desc&sessionId="+ sessionId +"&output=json&maxRows=3000";
     webMethod = encodeURI(webMethod);
     var clientesArray = await onInitserOrders();
     const page = args.object;
@@ -34,17 +38,21 @@ async function onNavigatingTo(args) {
 
         for (var i = 0; i < obj.length; i++) {
 
-            var cliente;
+            var origen1;
+            var destino1;
 
 
         for (var k=0; k<clientesArray.length; k++) {
 
+            if (obj[i][0] == clientesArray[k][1]){
+                origen1 = clientesArray[k][0];     
+            }
             if (obj[i][1] == clientesArray[k][1]){
-                cliente = clientesArray[k][0];     
+                destino1 = clientesArray[k][0];
             }
         }        
 
-            items.push({ Norden: obj[i][0], Origen: cliente , destino: obj[i][2]});    
+            items.push({ Origen: origen1 , destino: destino1, Norden:obj[i][2]});    
         
         }
         
@@ -54,37 +62,58 @@ async function onNavigatingTo(args) {
     }, function (e) {
 
     });
-   
-    
-    
+
+
     page.addCssFile("css/style.css");
     page.bindingContext = ordensViewModel;
 }
 
-
 function findCli(idcliente) {
 
 }
-/*
-Exporting a function in a NativeScript code-behind file makes it accessible
-to the file’s corresponding XML file. In this case, exporting the onNavigatingTo
-function here makes the navigatingTo="onNavigatingTo" binding in this page’s XML
-file work.
-*/
 
-function onMapReady(args) {
-    var mapView = args.object;
-  
-    console.log("Setting a marker...");
-    var marker = new mapsModule.Marker();
-    marker.position = mapsModule.Position.positionFromLatLng(4.7341279, -74.0242537);
-    marker.title = "Sydney";
-    marker.snippet = "Australia";
-    marker.userData = { index : 1};
-    mapView.addMarker(marker);
+
+async function onMapReady(args) {
+    geolocation.isEnabled().then(function (isEnabled) {
+        if (!isEnabled) {
+            geolocation.enableLocationRequest().then(function () {
+            }, function (e) {
+                console.log("Error: " + (e.message || e));
+            });
+        }
+    }, function (e) {
+        console.log("Error: " + (e.message || e));
+    });
+
+    var location = geolocation.getCurrentLocation({desiredAccuracy: 3, updateDistance: 10, maximumAge: 20000, timeout: 20000}).
+    then(function(loc) {
+        
+        if (loc) {
+            console.log("Current location is: " + loc);
+        }
     
-    // Disabling zoom gestures
-    mapView.settings.zoomGesturesEnabled = true;
+        console.log("Setting a marker...");
+        var marker = new mapsModule.Marker();
+        marker.position = mapsModule.Position.positionFromLatLng(loc.latitude, loc.longitude);
+        marker.title = "Colombia";
+        marker.snippet = "Bogota";
+        marker.userData = { index : 1};
+        mapView.addMarker(marker);
+       
+        // Disabling zoom gestures
+        mapView.zoom = 15;
+        mapView.latitude = loc.latitude;
+        mapView.longitude = loc.longitude;
+        mapView.settings.zoomGesturesEnabled = true;
+        mapView.settings.myLocationButtonEnabled = true;
+
+    }, function(e){
+        console.log("Error: " + e.message);
+    });
+
+    var mapView = args.object;
+
+
   }
   function onMarkerSelect(args) {
      console.log("Clicked on " +args.marker.title);
@@ -95,6 +124,46 @@ function onMapReady(args) {
   }
   function ontapList(args){
     appSettings.setNumber('numberO', args.object.items[args.index].Norden);
+    var origen = args.object.items[args.index].Origen;
+    var destino = args.object.items[args.index].destino;
+
+    var directions = new Directions();
+
+    directions.available().then(
+      function(avail) {
+        console.log(avail ? "Yes" : "No");
+      }
+    );
+ 
+    var location = geolocation.getCurrentLocation({desiredAccuracy: 3, updateDistance: 10, maximumAge: 20000, timeout: 20000}).
+    then(function(loc) {     
+        if (loc) {
+            console.log("Current location is: " + loc);
+        }
+            directions.navigate({
+            from: { // optional, default 'current location'
+                lat: loc.latitude,
+                lng: loc.longitude
+            },
+            to: [{ // if an Array is passed (as in this example), the last item is the destination, the addresses in between are 'waypoints'.
+             address: origen,
+             },
+             {
+             address: destino
+             }],
+            // for iOS-specific options, see the TypeScript example below.
+            }).then(
+            function() {
+                console.log("Maps app launched.");
+            },
+            function(error) {
+                console.log(error);
+            }
+            );
+    }, function(e){
+        console.log("Error: " + e.message);
+    });
+
 
   }
   function onButtoTapOrder() {
@@ -111,7 +180,7 @@ function onMapReady(args) {
   }
  async function onInitserOrders () {
     var sessionId = appSettings.getString('sessionId', 'defaultValue');
-    var webMethod = "https://www.impeltechnology.com/rest/api/selectQuery?query=select Nombre,id from Cliente1 &sessionId="+ sessionId +"&output=json&maxRows=3000";
+    var webMethod = "https://www.impeltechnology.com/rest/api/selectQuery?query=select Nombre,id from Ciudad &sessionId="+ sessionId +"&output=json&maxRows=3000";
     webMethod = encodeURI(webMethod);
     var obj;
     var name;

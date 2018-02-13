@@ -11,7 +11,7 @@ const frameModule = require("ui/frame");
 function onNavigatingTo(args) {
     var sessionId = appSettings.getString('sessionId', 'defaultValue');
     var nit = appSettings.getString('nit', 'defaultValue');
-    var webMethod = "https://www.impeltechnology.com/rest/api/selectQuery?query=select nombre,nit,Licencia_de_Conduccin,eps_,'',c_c_asociado,'',celular from Proveedor where nit = '" + nit + "'&sessionId="+ sessionId +"&output=json&maxRows=3000";
+    var webMethod = "https://www.impeltechnology.com/rest/api/selectQuery?query=select Nombre_Completo_Proveedor,nit,Licencia_de_Conduccin,celular from Proveedor where nit = '" + nit + "'&sessionId="+ sessionId +"&output=json&maxRows=3000";
     webMethod = encodeURI(webMethod);
     const page = args.object;
     var bindig = page.bindingContext;
@@ -29,20 +29,8 @@ function onNavigatingTo(args) {
             var label3 = view.getViewById(page, "licenciaP");
             label3.text = obj[0][2];
 
-            var label4 = view.getViewById(page, "seguridadsP");
-            label4.text = obj[0][3];
-
-            var label5 = view.getViewById(page, "soatP");
-            label5.text = obj[0][4];
-
-            var label6 = view.getViewById(page, "afiliadotP");
-            label6.text = obj[0][5];
-
-            var label7 = view.getViewById(page, "nombretP");
-            label7.text = obj[0][6];
-
             var label8 = view.getViewById(page, "numerocP");
-            label8.text = obj[0][7];
+            label8.text = obj[0][3];
 
     }, function (e) {
 

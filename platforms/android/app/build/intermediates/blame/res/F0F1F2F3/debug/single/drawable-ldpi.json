@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/home/kevin/appekoConductor/platforms/android/app/build/intermediates/res/merged/F0F1F2F3/debug/drawable-ldpi/logo.png",
+        "source": "/home/kevin/appekoConductor/platforms/android/app/src/main/res/drawable-ldpi/logo.png"
+    },
+    {
+        "merged": "/home/kevin/appekoConductor/platforms/android/app/build/intermediates/res/merged/F0F1F2F3/debug/drawable-ldpi/background.png",
+        "source": "/home/kevin/appekoConductor/platforms/android/app/src/main/res/drawable-ldpi/background.png"
+    },
+    {
+        "merged": "/home/kevin/appekoConductor/platforms/android/app/build/intermediates/res/merged/F0F1F2F3/debug/drawable-ldpi/icon.png",
+        "source": "/home/kevin/appekoConductor/platforms/android/app/src/main/res/drawable-ldpi/icon.png"
+    }
+]

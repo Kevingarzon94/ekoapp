@@ -35,6 +35,8 @@ function onNavigatingTo(args) {
     You can learn more about data binding in NativeScript at
     https://docs.nativescript.org/core-concepts/data-binding.
     */
+    page.addCssFile("css/style.css");
+
     page.bindingContext = loginViewModel;
 }
 async function onSigninButtonTap (args) {
@@ -106,7 +108,6 @@ async function loginValidation(sessionId,email){
             appSettings.setNumber('idVehiculo', obj[0][2]);
             appSettings.setString('nit', obj[0][3]);
 
-            alert("Bienvenido ");
             topmost.navigate("home/home-page");
             
         }else {

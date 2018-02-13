@@ -40,33 +40,8 @@
 		<StackLayout class="hr-light"></StackLayout>
 
 		<StackLayout orientation="horizontal" style="margin-left: 50px; margin-top: 40px;">
-			<Label text="Seguridad Social: " style="font-weight: bold;"/>
-			<TextField  hint="Seguridad social" id="seguridadsP" width="200" height="35"/>
-		</StackLayout>
-		<StackLayout class="hr-light"></StackLayout>
-
-		<StackLayout orientation="horizontal" style="margin-left: 50px; margin-top: 40px;">
-			<Label text="SOAT: " style="font-weight: bold;"/>
-			<TextField  hint="soat" id="soatP" width="200" height="35"/>
-		</StackLayout>
-		<StackLayout class="hr-light"></StackLayout>
-
-		<StackLayout orientation="horizontal" style="margin-left: 50px; margin-top: 40px;">
-			<Label text="Afiliado a transportadora: " style="font-weight: bold;"/>
-			<TextField  hint="Afiliado" id="afiliadotP" width="200" height="35"/>
-		</StackLayout>
-		<StackLayout class="hr-light"></StackLayout>
-
-		<StackLayout orientation="horizontal" style="margin-left: 50px; margin-top: 40px;">
-			<Label text="Nombre de transportadora: " style="font-weight: bold;"/>
-			<TextField  hint="Nombre" id="nombretP" width="200" height="35"/>
-		</StackLayout>
-
-		<StackLayout class="hr-light"></StackLayout>
-
-		<StackLayout orientation="horizontal" style="margin-left: 50px; margin-top: 40px;">
 			<Label text="Numero: " style="font-weight: bold;"/>
-			<TextField  hint="Numero" id="numerocP" width="200" height="35"/>
+			<TextField  hint="Celular" id="numerocP" width="200" height="35"/>
 		</StackLayout>
 		
 		<StackLayout class="hr-light"></StackLayout>

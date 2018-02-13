@@ -21,7 +21,7 @@ var view = require("ui/core/view");
 async function onNavigatingTo(args) {
     var sessionId = appSettings.getString('sessionId', 'defaultValue');
     var placa = appSettings.getNumber('idVehiculo', 123);
-    var webMethod = "https://www.impeltechnology.com/rest/api/selectQuery?query=select Num_Servicio,R6311987,CarroceriaServ from Servicio where status=6957915 and R6947057 = " + placa + "&sessionId="+ sessionId +"&output=json&maxRows=3000";
+    var webMethod = "https://www.impeltechnology.com/rest/api/selectQuery?query=select Num_Servicio,R6311987,CarroceriaServ from Servicio where status=6957915 or status=6957915 and R6947057 = " + placa + "&sessionId="+ sessionId +"&output=json&maxRows=3000";
     webMethod = encodeURI(webMethod);
     var clientesArray = await onInitserOrders();
     const page = args.object;
@@ -77,7 +77,7 @@ function onMapReady(args) {
   
     console.log("Setting a marker...");
     var marker = new mapsModule.Marker();
-    marker.position = mapsModule.Position.positionFromLatLng(-33.86, 151.20);
+    marker.position = mapsModule.Position.positionFromLatLng(4.7341279, -74.0242537);
     marker.title = "Sydney";
     marker.snippet = "Australia";
     marker.userData = { index : 1};

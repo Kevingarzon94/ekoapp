@@ -1,30 +1,31 @@
 {
-  "_from": "tns-core-modules@~3.4.0",
-  "_id": "tns-core-modules@3.4.0",
+  "_from": "tns-core-modules@next",
+  "_id": "tns-core-modules@4.0.0-2018-02-12-01",
   "_inBundle": false,
-  "_integrity": "sha1-PEDdPpXGwzs/73rU7nTaqEOpKhE=",
+  "_integrity": "sha1-cIAqh74B/UmG9Th7IqkQjY8Toyw=",
   "_location": "/tns-core-modules",
   "_phantomChildren": {},
   "_requested": {
-    "type": "range",
+    "type": "tag",
     "registry": true,
-    "raw": "tns-core-modules@~3.4.0",
+    "raw": "tns-core-modules@next",
     "name": "tns-core-modules",
     "escapedName": "tns-core-modules",
-    "rawSpec": "~3.4.0",
+    "rawSpec": "next",
     "saveSpec": null,
-    "fetchSpec": "~3.4.0"
+    "fetchSpec": "next"
   },
   "_requiredBy": [
-    "/tns-template-blank"
+    "#USER",
+    "/"
   ],
-  "_resolved": "https://registry.npmjs.org/tns-core-modules/-/tns-core-modules-3.4.0.tgz",
-  "_shasum": "3c40dd3e95c6c33b3fef7ad4ee74daa843a92a11",
-  "_spec": "tns-core-modules@~3.4.0",
-  "_where": "/home/kevin/appekoConductor/node_modules/tns-template-blank",
+  "_resolved": "https://registry.npmjs.org/tns-core-modules/-/tns-core-modules-4.0.0-2018-02-12-01.tgz",
+  "_shasum": "70802a87be01fd4986f5387b22a9108d8f13a32c",
+  "_spec": "tns-core-modules@next",
+  "_where": "/home/kevin/appekoConductor",
   "bundleDependencies": false,
   "dependencies": {
-    "tns-core-modules-widgets": "3.4.0"
+    "tns-core-modules-widgets": "next"
   },
   "deprecated": false,
   "description": "Telerik NativeScript Core Modules",
@@ -58,7 +59,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/NativeScript/NativeScript/commit/40868ae54b12b1e244a9cf93e3cc116f062eae86"
+    "url": "https://github.com/NativeScript/NativeScript/commit/2edef3de3b23a6825addb22272348742d2cea3ff"
   },
   "snapshot": {
     "android": {
@@ -71,5 +72,5 @@
     }
   },
   "typings": "tns-core-modules.d.ts",
-  "version": "3.4.0"
+  "version": "4.0.0-2018-02-12-01"
 }

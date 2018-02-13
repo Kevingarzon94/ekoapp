@@ -20,16 +20,16 @@ const http = require("http");
 
 function onNavigatingTo(args) {
 
-    //appSettings.setNumber('numberO', args.object.items[args.index].Norden);
+     //appSettings.setNumber('numberO', args.object.items[args.index].Norden);
     
-   /* var ofertanteName = appSettings.getString('Offer', 'DefaultValue');
-    var label1 = view.getViewById(page, "ofertante");
-    label1.text = ofertanteName;*/
+    /* var ofertanteName = appSettings.getString('Offer', 'DefaultValue');
+        var label1 = view.getViewById(page, "ofertante");
+        label1.text = ofertanteName;*/
     var key = appSettings.getNumber('key', 123);
 
     var sessionId = appSettings.getString('sessionId', 'defaultValue');
     var NumeroOrden = appSettings.getNumber('numberO', 123);
-    var webMethod = "https://www.impeltechnology.com/rest/api/selectQuery?query=select R6311987,R7442986,Cantidad from Servicio where Num_Servicio = " + NumeroOrden + "&sessionId="+ sessionId +"&output=json&maxRows=3000";
+    var webMethod = "https://www.impeltechnology.com/rest/api/selectQuery?query=select R6311987,R7442986 from Servicio where Num_Servicio = " + NumeroOrden + "&sessionId="+ sessionId +"&output=json&maxRows=3000";
     webMethod = encodeURI(webMethod);
     const page = args.object;
     var bindig = page.bindingContext;
@@ -39,6 +39,7 @@ function onNavigatingTo(args) {
         var obj = response.content.toJSON();
         
         cliName(obj[0][0],args);
+        tipos_mercancia(obj[0][1],args);
 
     
     }, function (e) {
@@ -97,6 +98,45 @@ async function cliName (nombreCliente,args) {
 
     page.bindingContext = detalleViewModel;
     }
+    
+    async function tipos_mercancia (idMercancia,args) {
+    var sessionId = appSettings.getString('sessionId', 'defaultValue');
+    var webMethod = "https://www.impeltechnology.com/rest/api/selectQuery?query=select Nombre from Tipos_de_Mercancia where id= " + idMercancia + "&sessionId="+ sessionId +"&output=json&maxRows=3000";
+    webMethod = encodeURI(webMethod);
+    var obj;
+    var name;
+    const page = args.object;
+    var bindig = page.bindingContext;
+
+    await http.request({ url: webMethod, method: "GET" }).then(function (response) {
+
+        obj = response.content.toJSON();
+        name = obj[0][0];
+        var label2 = view.getViewById(page, "Tipo_carga");
+        label2.text = name;
+        
+    }, function (e) {
+
+    });
+
+    page.bindingContext = detalleViewModel;
+    }
+    function onButtonTap () {
+        alert("Aceptado");
+        var topmost = frameModule.topmost();   
+        topmost.navigate("home/home-page");
+    }
+
+    function onButtonTap1 () {
+        alert("Rechazado");
+        var topmost = frameModule.topmost();
+        topmost.navigate("home/home-page"); 
+
+    }   
+
+
+exports.onButtonTap = onButtonTap;
+exports.onButtonTap1 = onButtonTap1;
 exports.cliName = cliName;
 exports.onNavigatingTo = onNavigatingTo;
 exports.onBack = onBack;

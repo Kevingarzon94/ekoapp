@@ -1,47 +1,60 @@
 const HomeViewModel = require("./home-view-model");
 var mapsModule = require("nativescript-google-maps-sdk");
 const homeViewModel = new HomeViewModel();
-const geoLocation = require("nativescript-geolocation");
+var geolocation = require("nativescript-geolocation");
 
 
 function onNavigatingTo(args) {
 
+
     const page = args.object;
     page.addCssFile("css/style.css");
-    /*
-    A page’s bindingContext is an object that should be used to perform
-    data binding between XML markup and JavaScript code. Properties
-    on the bindingContext can be accessed using the {{ }} syntax in XML.
-    In this example, the {{ message }} and {{ onTap }} bindings are resolved
-    against the object returned by createViewModel().
+    
 
-    You can learn more about data binding in NativeScript at
-    https://docs.nativescript.org/core-concepts/data-binding.
-    */
     page.bindingContext = homeViewModel;
 }
 
-/*
-Exporting a function in a NativeScript code-behind file makes it accessible
-to the file’s corresponding XML file. In this case, exporting the onNavigatingTo
-function here makes the navigatingTo="onNavigatingTo" binding in this page’s XML
-file work.
-*/
-
 function onMapReady(args) {
+    geolocation.isEnabled().then(function (isEnabled) {
+        if (!isEnabled) {
+            geolocation.enableLocationRequest().then(function () {
+            }, function (e) {
+                console.log("Error: " + (e.message || e));
+            });
+        }
+    }, function (e) {
+        console.log("Error: " + (e.message || e));
+    });
+
+    var location = geolocation.getCurrentLocation({desiredAccuracy: 3, updateDistance: 10, maximumAge: 20000, timeout: 20000}).
+    then(function(loc) {
+        
+        if (loc) {
+            console.log("Current location is: " + loc);
+        }
+    
+        console.log("Setting a marker...");
+        var marker = new mapsModule.Marker();
+        marker.position = mapsModule.Position.positionFromLatLng(loc.latitude, loc.longitude);
+        marker.title = "Colombia";
+        marker.snippet = "Bogota";
+        marker.userData = { index : 1};
+        mapView.addMarker(marker);
+        
+        // Disabling zoom gestures
+        mapView.zoom = 15;
+        mapView.latitude = loc.latitude;
+        mapView.longitude = loc.longitude;
+        mapView.settings.zoomGesturesEnabled = true;
+        mapView.settings.myLocationButtonEnabled = true;
+
+    }, function(e){
+        console.log("Error: " + e.message);
+    });
+
     var mapView = args.object;
 
-    console.log("Setting a marker...");
-    var marker = new mapsModule.Marker();
-    marker.position = mapsModule.Position.positionFromLatLng(-33.86, 151.20);
-    marker.title = "Sydney";
-    marker.snippet = "Australia";
-    marker.userData = { index : 1};
-    mapView.addMarker(marker);
-    
-    // Disabling zoom gestures
-    mapView.settings.zoomGesturesEnabled = true;
-    mapView.settings.myLocationButtonEnabled = true;
+
   }
   function onMarkerSelect(args) {
      console.log("Clicked on " +args.marker.title);
