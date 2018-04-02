@@ -1,0 +1,50 @@
+[
+    {
+        "merged": "C:\\Users\\pc\\Documents\\Nueva carpeta\\appekoConductor\\platforms\\android\\app\\build\\intermediates\\res\\merged\\F0F1F2F3\\release\\drawable-v21\\avd_hide_password.xml",
+        "source": "C:\\Users\\pc\\.android\\build-cache\\e655374a083fa1b61054fecf8bebc4eb5edf5a58\\output\\res\\drawable-v21\\avd_hide_password.xml"
+    },
+    {
+        "merged": "C:\\Users\\pc\\Documents\\Nueva carpeta\\appekoConductor\\platforms\\android\\app\\build\\intermediates\\res\\merged\\F0F1F2F3\\release\\drawable-v21\\pressable_item_background.xml",
+        "source": "C:\\Users\\pc\\.android\\build-cache\\816a7bf4d4098452f80ce15af34c3eaeb6f6a691\\output\\res\\drawable-v21\\pressable_item_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\pc\\Documents\\Nueva carpeta\\appekoConductor\\platforms\\android\\app\\build\\intermediates\\res\\merged\\F0F1F2F3\\release\\drawable-v21\\abc_action_bar_item_background_material.xml",
+        "source": "C:\\Users\\pc\\.android\\build-cache\\2a69a875b15d2089b7d32b507dddef11677edb83\\output\\res\\drawable-v21\\abc_action_bar_item_background_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\pc\\Documents\\Nueva carpeta\\appekoConductor\\platforms\\android\\app\\build\\intermediates\\res\\merged\\F0F1F2F3\\release\\drawable-v21\\autocomplete_focusable_bg.xml",
+        "source": "C:\\Users\\pc\\.android\\build-cache\\b34729eb3f0de6c9f6428c651d665e51d4c63923\\output\\res\\drawable-v21\\autocomplete_focusable_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\pc\\Documents\\Nueva carpeta\\appekoConductor\\platforms\\android\\app\\build\\intermediates\\res\\merged\\F0F1F2F3\\release\\drawable-v21\\abc_edit_text_material.xml",
+        "source": "C:\\Users\\pc\\.android\\build-cache\\2a69a875b15d2089b7d32b507dddef11677edb83\\output\\res\\drawable-v21\\abc_edit_text_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\pc\\Documents\\Nueva carpeta\\appekoConductor\\platforms\\android\\app\\build\\intermediates\\res\\merged\\F0F1F2F3\\release\\drawable-v21\\avd_show_password.xml",
+        "source": "C:\\Users\\pc\\.android\\build-cache\\e655374a083fa1b61054fecf8bebc4eb5edf5a58\\output\\res\\drawable-v21\\avd_show_password.xml"
+    },
+    {
+        "merged": "C:\\Users\\pc\\Documents\\Nueva carpeta\\appekoConductor\\platforms\\android\\app\\build\\intermediates\\res\\merged\\F0F1F2F3\\release\\drawable-v21\\notification_action_background.xml",
+        "source": "C:\\Users\\pc\\.android\\build-cache\\2a69a875b15d2089b7d32b507dddef11677edb83\\output\\res\\drawable-v21\\notification_action_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\pc\\Documents\\Nueva carpeta\\appekoConductor\\platforms\\android\\app\\build\\intermediates\\res\\merged\\F0F1F2F3\\release\\drawable-v21\\autocomplete_bg_normal.xml",
+        "source": "C:\\Users\\pc\\.android\\build-cache\\b34729eb3f0de6c9f6428c651d665e51d4c63923\\output\\res\\drawable-v21\\autocomplete_bg_normal.xml"
+    },
+    {
+        "merged": "C:\\Users\\pc\\Documents\\Nueva carpeta\\appekoConductor\\platforms\\android\\app\\build\\intermediates\\res\\merged\\F0F1F2F3\\release\\drawable-v21\\design_password_eye.xml",
+        "source": "C:\\Users\\pc\\.android\\build-cache\\e655374a083fa1b61054fecf8bebc4eb5edf5a58\\output\\res\\drawable-v21\\design_password_eye.xml"
+    },
+    {
+        "merged": "C:\\Users\\pc\\Documents\\Nueva carpeta\\appekoConductor\\platforms\\android\\app\\build\\intermediates\\res\\merged\\F0F1F2F3\\release\\drawable-v21\\design_bottom_navigation_item_background.xml",
+        "source": "C:\\Users\\pc\\.android\\build-cache\\e655374a083fa1b61054fecf8bebc4eb5edf5a58\\output\\res\\drawable-v21\\design_bottom_navigation_item_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\pc\\Documents\\Nueva carpeta\\appekoConductor\\platforms\\android\\app\\build\\intermediates\\res\\merged\\F0F1F2F3\\release\\drawable-v21\\autocomplete_bg_active.xml",
+        "source": "C:\\Users\\pc\\.android\\build-cache\\b34729eb3f0de6c9f6428c651d665e51d4c63923\\output\\res\\drawable-v21\\autocomplete_bg_active.xml"
+    },
+    {
+        "merged": "C:\\Users\\pc\\Documents\\Nueva carpeta\\appekoConductor\\platforms\\android\\app\\build\\intermediates\\res\\merged\\F0F1F2F3\\release\\drawable-v21\\abc_btn_colored_material.xml",
+        "source": "C:\\Users\\pc\\.android\\build-cache\\2a69a875b15d2089b7d32b507dddef11677edb83\\output\\res\\drawable-v21\\abc_btn_colored_material.xml"
+    }
+]

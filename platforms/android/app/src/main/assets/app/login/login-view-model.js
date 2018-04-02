@@ -6,7 +6,7 @@ function HomeViewModel() {
     const viewModel = observableModule.fromObject({
         email: "",
         password: "",
-
+        
     });
     return viewModel;
 }

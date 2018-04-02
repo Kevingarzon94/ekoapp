@@ -1,0 +1,26 @@
+[
+    {
+        "outputFile": "C:\\Users\\pc\\Documents\\Nueva carpeta\\appekoConductor\\platforms\\android\\app\\build\\intermediates\\incremental\\mergeF0F1F2F3ReleaseResources\\merged.dir\\values-sw720dp-v13\\values-sw720dp-v13.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 55,
+                    "endOffset": 106
+                },
+                "from": {
+                    "file": "C:\\Users\\pc\\.android\\build-cache\\b34729eb3f0de6c9f6428c651d665e51d4c63923\\output\\res\\values-sw720dp-v13\\values-sw720dp-v13.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 55,
+                        "endOffset": 106
+                    }
+                }
+            }
+        ]
+    }
+]

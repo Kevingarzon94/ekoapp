@@ -1,7 +1,6 @@
 <Page class="page"
     navigatingTo="onNavigatingTo"  
-    xmlns="http://schemas.nativescript.org/tns.xsd"
-    xmlns:maps="nativescript-google-maps-sdk">
+    xmlns="http://schemas.nativescript.org/tns.xsd">
 
     <!--Add your page content here-->
 <ActionBar title="{{ nombreConductor }}">
@@ -15,35 +14,26 @@
     <!--<Image src="~/images/icono_eko_mini.png" class="action-image"></Image> -->
 </ActionBar>
 <FlexboxLayout flexDirection="column">
-
-          <GridLayout style="height: 50%">
-
-             <maps:mapView latitude="{{ latitude }}" longitude="{{ longitude }}" mapAnimationsEnabled="{{ mapAnimationsEnabled }}"
-                                    zoom="{{ zoom }}" bearing="{{ bearing }}" 
-                                    tilt="{{ tilt }}" padding="{{ padding }}" mapReady="onMapReady"  
-                                markerSelect="onMarkerSelect" markerBeginDragging="onMarkerBeginDragging"
-                                markerEndDragging="onMarkerEndDragging" markerDrag="onMarkerDrag"
-                                cameraChanged="onCameraChanged" />
-
-            </GridLayout>
-        <GridLayout style="height: 15%" backgroundColor="#023e56">
-        <Label color="white" text="Seleccione Orden de Servicio" class="list-group-item-heading" verticalAlignment="center" style="width: 60%" />
+        <GridLayout style="height: 15%; text-align: center;" align="center" backgroundColor="#023e56">
+        <Label color="white" text="Viajes Disponibles" class="list-group-item-heading" verticalAlignment="center" />
         </GridLayout>
 		<GridLayout style="height: 50%">
-			<ListView id="listview" class="list-group" itemTap="ontapList" style="height:1250px">
+			<ListView id="listview" class="list-group" itemTap="onButtoTapOrder" style="height:1250px">
 				<ListView.itemTemplate>
-					<FlexboxLayout flexDirection="row" class="list-group-item">
-                        
-                        <Label text="Origen: " class="list-group-item-heading" verticalAlignment="center" style="width: 20%" />
-                        <Label text="{{ Origen }}" class="list-group-item-heading" verticalAlignment="center" style="width: 32%" />
-                        <Label text="Destino: " class="list-group-item-heading" verticalAlignment="center" style="width: 20%" />
-                        <Label text="{{ destino }}" class="list-group-item-heading" verticalAlignment="center" style="width: 30%" />
-                    </FlexboxLayout>
+                    <StackLayout flexDirection="row" class="list-group-item">
+                        <Label text="{{ nConsecutivo }}" class="list-group-item-heading" verticalAlignment="center" style="width: 90%"/>                        
+                        <Label text="{{ ofertante }}" class="list-group-item-heading" verticalAlignment="center" style="width: 80%" />
+                        <Label text="{{ origen }}" class="list-group-item-heading" verticalAlignment="center" style="width: 80%" />
+                        <Label text="{{ destino }}" class="list-group-item-heading" verticalAlignment="center" style="width: 80%" />
+                        <Label text="{{ fecha_cargue }}" class="list-group-item-heading" verticalAlignment="center" style="width: 80%" />
+                        <Label text="{{ peso }}" class="list-group-item-heading" verticalAlignment="center" style="width: 80%" />
+
+                    </StackLayout>
 				</ListView.itemTemplate>
 			</ListView>
 		</GridLayout>
 		<StackLayout backgroundColor="white" style="height: 20%">
-			<Button color="darkgray" text="Ver Detalle" backgroundColor="#ECECE5" class="btn" tap="onButtoTapOrder" />
+		<!--	<Button color="darkgray" text="Ver Detalle" backgroundColor="#ECECE5" class="btn" tap="onButtoTapOrder" /> -->
 		</StackLayout>
     </FlexboxLayout>
 </Page>

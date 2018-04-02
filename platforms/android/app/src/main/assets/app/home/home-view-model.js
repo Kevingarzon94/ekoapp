@@ -30,8 +30,6 @@ function HomeViewModel() {
               minimumUpdateTime: 1000 * 1
             });
         },    
-
-        nombreConductor: appSettings.getString('nombreprov', 'defaultValue'),
         
         navigatetoOrdens: function () {
             var topmost = frameModule.topmost();
@@ -40,7 +38,7 @@ function HomeViewModel() {
         },
         navigatetoNotification: function (){
             var topmost = frameModule.topmost();
-            topmost.navigate("notificaciones/notificaciones-page");           
+            topmost.navigate("detalleNotificaciones/detalleN-page");           
         },
         navigatetoPayments: function (){
           var topmost = frameModule.topmost();

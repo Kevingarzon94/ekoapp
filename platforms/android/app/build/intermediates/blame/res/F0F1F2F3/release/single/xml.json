@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "C:\\Users\\pc\\Documents\\Nueva carpeta\\appekoConductor\\platforms\\android\\app\\build\\intermediates\\res\\merged\\F0F1F2F3\\release\\xml\\chart_palettes_light_selected.xml",
+        "source": "C:\\Users\\pc\\.android\\build-cache\\316d8979ee437a1342fec483fb7b4f571b8751b9\\output\\res\\xml\\chart_palettes_light_selected.xml"
+    },
+    {
+        "merged": "C:\\Users\\pc\\Documents\\Nueva carpeta\\appekoConductor\\platforms\\android\\app\\build\\intermediates\\res\\merged\\F0F1F2F3\\release\\xml\\chart_palettes_dark_selected.xml",
+        "source": "C:\\Users\\pc\\.android\\build-cache\\316d8979ee437a1342fec483fb7b4f571b8751b9\\output\\res\\xml\\chart_palettes_dark_selected.xml"
+    },
+    {
+        "merged": "C:\\Users\\pc\\Documents\\Nueva carpeta\\appekoConductor\\platforms\\android\\app\\build\\intermediates\\res\\merged\\F0F1F2F3\\release\\xml\\chart_palettes_default_dark.xml",
+        "source": "C:\\Users\\pc\\.android\\build-cache\\316d8979ee437a1342fec483fb7b4f571b8751b9\\output\\res\\xml\\chart_palettes_default_dark.xml"
+    },
+    {
+        "merged": "C:\\Users\\pc\\Documents\\Nueva carpeta\\appekoConductor\\platforms\\android\\app\\build\\intermediates\\res\\merged\\F0F1F2F3\\release\\xml\\provider_paths.xml",
+        "source": "C:\\Users\\pc\\Documents\\Nueva carpeta\\appekoConductor\\platforms\\android\\app\\src\\F0\\res\\xml\\provider_paths.xml"
+    },
+    {
+        "merged": "C:\\Users\\pc\\Documents\\Nueva carpeta\\appekoConductor\\platforms\\android\\app\\build\\intermediates\\res\\merged\\F0F1F2F3\\release\\xml\\chart_palettes_default_light.xml",
+        "source": "C:\\Users\\pc\\.android\\build-cache\\316d8979ee437a1342fec483fb7b4f571b8751b9\\output\\res\\xml\\chart_palettes_default_light.xml"
+    }
+]

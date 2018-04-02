@@ -2,6 +2,8 @@ const HomeViewModel = require("./home-view-model");
 var mapsModule = require("nativescript-google-maps-sdk");
 const homeViewModel = new HomeViewModel();
 var geolocation = require("nativescript-geolocation");
+var view = require("ui/core/view");
+var appSettings = require('application-settings');
 
 
 function onNavigatingTo(args) {
@@ -9,8 +11,9 @@ function onNavigatingTo(args) {
 
     const page = args.object;
     page.addCssFile("css/style.css");
-    
-
+   
+    var title_Bar = view.getViewById(page, "noPlaca");
+    title_Bar.title = appSettings.getString('nombreprov', 'defaultValue');   
     page.bindingContext = homeViewModel;
 }
 

@@ -1,0 +1,19 @@
+<Page class="page"
+    navigatingTo="onNavigatingTo"  
+    xmlns="http://schemas.nativescript.org/tns.xsd"
+	actionBarHidden="true">
+
+	<ScrollView>
+		<StackLayout class="home-panel">
+			<GridLayout>
+				<Image width="250" src="~/images/logo_eko_login.png" class="logo_login"/>
+			</GridLayout>
+	<StackLayout orientation="vertical" style="margin-top:50px; border-radius: 40px;" width="300" height="300" backgroundColor="#efefef">
+	<Label text="Seleccione Placa" style="text-align:center;"/>
+	<ListPicker id="placaId" selectedIndex="{{ selectedListPickerIndex }}" />
+    <Button tap="tapPrueba" text="Entrar" color="white" width="250" height="50" backgroundColor="#004f73" style="margin-top:50px; border-radius: 40px;" />
+	</StackLayout>
+	</StackLayout>
+	</ScrollView>
+
+</Page>

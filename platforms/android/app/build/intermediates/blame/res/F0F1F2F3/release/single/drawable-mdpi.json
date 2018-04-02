@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "C:\\Users\\pc\\Documents\\Nueva carpeta\\appekoConductor\\platforms\\android\\app\\build\\intermediates\\res\\merged\\F0F1F2F3\\release\\drawable-mdpi\\logo.png",
+        "source": "C:\\Users\\pc\\Documents\\Nueva carpeta\\appekoConductor\\platforms\\android\\app\\src\\main\\res\\drawable-mdpi\\logo.png"
+    },
+    {
+        "merged": "C:\\Users\\pc\\Documents\\Nueva carpeta\\appekoConductor\\platforms\\android\\app\\build\\intermediates\\res\\merged\\F0F1F2F3\\release\\drawable-mdpi\\background.png",
+        "source": "C:\\Users\\pc\\Documents\\Nueva carpeta\\appekoConductor\\platforms\\android\\app\\src\\main\\res\\drawable-mdpi\\background.png"
+    },
+    {
+        "merged": "C:\\Users\\pc\\Documents\\Nueva carpeta\\appekoConductor\\platforms\\android\\app\\build\\intermediates\\res\\merged\\F0F1F2F3\\release\\drawable-mdpi\\icon.png",
+        "source": "C:\\Users\\pc\\Documents\\Nueva carpeta\\appekoConductor\\platforms\\android\\app\\src\\main\\res\\drawable-mdpi\\icon.png"
+    }
+]

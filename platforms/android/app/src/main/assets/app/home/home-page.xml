@@ -4,7 +4,7 @@
     xmlns:maps="nativescript-google-maps-sdk">
 
     <!--Add your page content here-->
-<ActionBar title="{{ nombreConductor }}">
+<ActionBar id="noPlaca">
 <ActionItem ios.systemIcon="2" ios.position="right" > 
     <Image src="~/images/descarga.png" class="action-image" ios:horizontalAlignment="right"
     android:horizontalAlignment="right" tap="{{ navigatetoPerfil }}"></Image>
@@ -27,11 +27,10 @@
             </GridLayout>
          <StackLayout backgroundColor="white" style="height: 80%">
            
-            <Button color="#004f73" text="Nuevos Servicios" backgroundColor="#ECECE5" class="btn" tap="{{ navigatetoOrdens}}"/>
-            <Button color="#004f73" text="Servicios" backgroundColor="#ECECE5" class="btn" tap="{{ navigatetoNotification}}"/>
+            <Button color="#004f73" text="Viajes Disponibles" backgroundColor="#ECECE5" class="btn" tap="{{ navigatetoOrdens}}"/>
+            <Button color="#004f73" text="En Transito" backgroundColor="#ECECE5" class="btn" tap="{{ navigatetoNotification}}"/>
             <Button color="#004f73" text="Pagos" backgroundColor="#ECECE5" class="btn" tap="{{ navigatetoPayments }}"/>
-            <!--<Button color="#004f73" text="Novedades" backgroundColor="#ECECE5" class="btn"/> -->
-            <Button color="#004f73" text="Salir" backgroundColor="#ECECE5" class="btn" tap="{{ back }}"/>
+            <Button color="#004f73" text="Salir" backgroundColor="#6275F6" class="btn" tap="{{ back }}"/>
         </StackLayout>
     </FlexboxLayout>
 </Page>

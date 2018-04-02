@@ -19,43 +19,114 @@ var view = require("ui/core/view");
 var geolocation = require("nativescript-geolocation");
 // require the plugin
 var Directions = require("nativescript-directions").Directions;
-
-
-
+var array_clientes = [];
+function formateDate(date){
+    var fechaCesionFormat;
+    var year;
+    var month;
+    var day;
+   
+    var dateformat;
+   
+    if(date !== null && date !== ''){
+     fechaCesionFormat = new Date(date);
+     year = fechaCesionFormat.getFullYear();
+     month = fechaCesionFormat.getMonth() + 1;
+     day = fechaCesionFormat.getDate();
+   
+     if((day + "").length === 1){
+   
+       day = "0" + day;
+   
+     }
+     if((month + "").length === 1){
+   
+       month = "0" + month;
+   
+     }
+     dateformat =  day + "/" + (month) + "/" + year;
+     return dateformat;
+   }else{
+     dateformat = '';
+     return dateformat;
+   }
+   }
 async function onNavigatingTo(args) {
     var sessionId = appSettings.getString('sessionId', 'defaultValue');
     var placa = appSettings.getNumber('idVehiculo', 123);
-    var webMethod = "https://www.impeltechnology.com/rest/api/selectQuery?query=select Origen,Destino,Num_Servicio from Servicio where status=6948340 and R6947057 = " + placa + " order by Num_Servicio desc&sessionId="+ sessionId +"&output=json&maxRows=3000";
-    webMethod = encodeURI(webMethod);
+    var nombre_clientes = [];
+    ///////////////////////////
+    /*
+    Despacho Nro. 1
+    Ofertante
+    Origen
+    Destino
+    Fecha de Cargue
+    Peso
+    */
+   ///////////////////////////
+   var urlCLientes = "https://www.impeltechnology.com/rest/api/selectQuery?query=select Nombre,id from Cliente1 &sessionId="+ sessionId +"&output=json&maxRows=3000";
+   urlCLientes = encodeURI(urlCLientes);
+   var obj1;
+
+   await http.request({ url: urlCLientes, method: "POST" }).then(function (response) {
+
+       obj1 = response.content.toJSON();
+       nombre_clientes = obj1;
+
+   }, function (e) {
+
+   });
+
+   
+    var webMethod1 = "https://www.impeltechnology.com/rest/api/selectQuery?query=select id,Nmero_Consecutivo_oc,R8676030,Origen,'',Fecha_y_Hora_de_Cargue,Total_Toneladas_Despacho from Despacho where status=8544722 and R8544591 = " + placa + " order by Nmero_Consecutivo_oc desc&sessionId="+ sessionId +"&output=json&maxRows=3000";
+    webMethod1 = encodeURI(webMethod1);
     var clientesArray = await onInitserOrders();
     const page = args.object;
     var bindig = page.bindingContext;
 
-    http.request({ url: webMethod, method: "GET" }).then(function (response) {
+    http.request({ url: webMethod1, method: "POST" }).then(function (response) {
 
         var obj = response.content.toJSON();
         var items = [];
+            if(obj.length < 1) {
+            alert("No se Econtraron Nuevos Viajes Disponibles.");
+            var topmost = frameModule.topmost();
+            topmost.navigate("home/home-page"); 
 
+            return;
+            }
         for (var i = 0; i < obj.length; i++) {
 
-            var origen1;
-            var destino1;
+            var origen= "Origen: ";
+            for (var k=0; k<clientesArray.length; k++) {
 
-
-        for (var k=0; k<clientesArray.length; k++) {
-
-            if (obj[i][0] == clientesArray[k][1]){
-                origen1 = clientesArray[k][0];     
+            if (obj[i][3] == clientesArray[k][1]){
+                origen = "Origen: "+clientesArray[k][0];     
             }
-            if (obj[i][1] == clientesArray[k][1]){
-                destino1 = clientesArray[k][0];
-            }
-        }        
+/*            if (obj[i][1] == clientesArray[k][1]){
+                destino1 = "Destino: "+clientesArray[k][0];*/
+            
+        }       
 
-            items.push({ Origen: origen1 , destino: destino1, Norden:obj[i][2]});    
+        var nCons = "Despacho Nro." + obj[i][1];
+        var ofertante = "Ofertante: ";
+        var destino = "Destino: " +obj[i][4];
+        var f_cargue = "Fecha Cargue: "+ formateDate(obj[i][5]);
+        var peso = "Peso: "+obj[i][6];
+
+        for (var k=0; k<nombre_clientes.length; k++) {
+
+            if (obj[i][2] == nombre_clientes[k][1]){
+                ofertante = "Ofertante: "+nombre_clientes[k][0];     
+            }
+
+        }       
+
+            items.push({ nConsecutivo: nCons , ofertante: ofertante, Norden:obj[i][0],origen:origen, destino:destino, fecha_cargue:f_cargue, peso:peso});    
         
         }
-        
+    
         var listview = view.getViewById(page, "listview");
         listview.items = items;
 
@@ -68,12 +139,8 @@ async function onNavigatingTo(args) {
     page.bindingContext = ordensViewModel;
 }
 
-function findCli(idcliente) {
 
-}
-
-
-async function onMapReady(args) {
+/*async function onMapReady(args) {
     geolocation.isEnabled().then(function (isEnabled) {
         if (!isEnabled) {
             geolocation.enableLocationRequest().then(function () {
@@ -114,7 +181,7 @@ async function onMapReady(args) {
     var mapView = args.object;
 
 
-  }
+  }*/
   function onMarkerSelect(args) {
      console.log("Clicked on " +args.marker.title);
   }
@@ -166,7 +233,8 @@ async function onMapReady(args) {
 
 
   }
-  function onButtoTapOrder() {
+  function onButtoTapOrder(args) {
+    appSettings.setNumber('numberO', args.object.items[args.index].Norden);    
     var key = 1;
     appSettings.setNumber('key', key);      
     var topmost = frameModule.topmost();
@@ -180,7 +248,7 @@ async function onMapReady(args) {
   }
  async function onInitserOrders () {
     var sessionId = appSettings.getString('sessionId', 'defaultValue');
-    var webMethod = "https://www.impeltechnology.com/rest/api/selectQuery?query=select Nombre,id from Ciudad &sessionId="+ sessionId +"&output=json&maxRows=3000";
+    var webMethod = "https://www.impeltechnology.com/rest/api/selectQuery?query=select Nombre,id from Ciudad where Codigo_Ciudad=000 &sessionId="+ sessionId +"&output=json&maxRows=3000";
     webMethod = encodeURI(webMethod);
     var obj;
     var name;
@@ -196,11 +264,13 @@ async function onMapReady(args) {
 
     return obj;
     }
+
+
     exports.onInitserOrders = onInitserOrders;  
     exports.onBack = onBack;
     exports.ontapList = ontapList;
     exports.onButtoTapOrder = onButtoTapOrder;
-    exports.onMapReady = onMapReady;
+   // exports.onMapReady = onMapReady;
     exports.onMarkerSelect = onMarkerSelect;
     exports.onCameraChanged = onCameraChanged;
     exports.onNavigatingTo = onNavigatingTo;

@@ -1,0 +1,28 @@
+<Page class="page"
+    navigatingTo="onNavigatingTo"  
+    xmlns="http://schemas.nativescript.org/tns.xsd">
+
+    <!--Add your page content here-->
+<ActionBar title="{{ nombreConductor }}">
+  <ActionItem tap="onBack"
+      ios.systemIcon="9" ios.position="left"
+      android.systemIcon="ic_menu_back" android.position="actionBar"></ActionItem>
+<ActionItem ios.systemIcon="2" ios.position="right" >
+    <Image src="~/images/icono_eko_mini.png" class="action-image" ios:horizontalAlignment="right"
+    android:horizontalAlignment="right"></Image>
+</ActionItem>  
+    <!--<Image src="~/images/icono_eko_mini.png" class="action-image"></Image> -->
+</ActionBar>
+<FlexboxLayout flexDirection="column">
+
+	<StackLayout orientation="vertical" style="margin-top:50px; border-radius: 40px;" width="50%" height="90%" backgroundColor="#efefef">
+	<Label text="Seleccione el tipo de Novedad" style="text-align:center;"/>
+	<ListPicker id="tipo_i" items="{{ listPickerCountries }}"  selectedIndex="{{ selectedListPickerIndex }}" />
+  	<Label text="Escriba Detalles de la incidencia" style="text-align:center;"/>
+    <TextField hint="Detalles de la incidencia..." text="{{ ComentarioIncidencia }}"/>
+    <Button tap="fotoRemesa1" text="Tomar Foto Indicencia" color="#004f73" width="250" height="50" backgroundColor="#ECECE5" style="margin-top:50px; border-radius: 40px;" />   
+    <Button tap="crearIncidencia" text="Grabar Incidencia" color="white" width="250" height="50" backgroundColor="#004f73" style="margin-top:50px; border-radius: 40px;" />
+	</StackLayout>
+
+    </FlexboxLayout>
+</Page>

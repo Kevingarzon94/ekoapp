@@ -17,9 +17,10 @@
 
          <StackLayout backgroundColor="white" style="height: 80%">
            
-            <Button color="darkgray" text="Ordenes Confirmadas" backgroundColor="#ECECE5" class="btn" tap="confirmadasOrdenes"/>
-            <Button color="darkgray" text="Ordenes Rechazadas" backgroundColor="#ECECE5" class="btn" tap="rechazadasOrdenes"/>
-            <Button color="darkgray" text="Historial de Ordenes" backgroundColor="#ECECE5" class="btn" tap="historialOrdenes"/>
+            <Button color="#004f73" text="Foto Remesa1" backgroundColor="#ECECE5" class="btn" tap="fotoRemesa1"/>
+            <Button color="#004f73" text="Foto Remesa2" backgroundColor="#ECECE5" class="btn" tap="fotoRemesa2"/>
+            <Button color="#004f73" text="Foto Remesa3" backgroundColor="#ECECE5" class="btn" tap="fotoRemesa3"/>
+            <Button color="#004f73" text="Reportar Novedad" backgroundColor="#6275F6" class="btn" tap="goNovedades"/>
 
         </StackLayout>
     </FlexboxLayout>

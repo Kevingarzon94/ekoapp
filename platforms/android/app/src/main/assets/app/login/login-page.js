@@ -18,23 +18,8 @@ var LoadingIndicator = require("nativescript-loading-indicator").LoadingIndicato
 
 
 function onNavigatingTo(args) {
-    /*
-    This gets a reference this page’s <Page> UI component. You can
-    view the API reference of the Page to see what’s available at
-    https://docs.nativescript.org/api-reference/classes/_ui_page_.page.html
-    */
     const page = args.object;
 
-    /*
-    A page’s bindingContext is an object that should be used to perform
-    data binding between XML markup and JavaScript code. Properties
-    on the bindingContext can be accessed using the {{ }} syntax in XML.
-    In this example, the {{ message }} and {{ onTap }} bindings are resolved
-    against the object returned by createViewModel().
-
-    You can learn more about data binding in NativeScript at
-    https://docs.nativescript.org/core-concepts/data-binding.
-    */
     page.addCssFile("css/style.css");
 
     page.bindingContext = loginViewModel;
@@ -50,9 +35,9 @@ async function onSigninButtonTap (args) {
     
     
     var sessionId = await sessionIdreturn();
-    var email = '79906339';
-    var pass = bindingContext.pass;
-    var login = await loginValidation(sessionId,email);
+    var email = bindingContext.email;
+    var pass = bindingContext.password;
+    var login = await loginValidation(sessionId,email,pass);
 
     appSettings.setString('email', sessionId);
     loader.hide();
@@ -92,9 +77,9 @@ async function sessionIdreturn () {
     return sessionId;
 }
 
-async function loginValidation(sessionId,email){
+async function loginValidation(sessionId,email,pass){
 
-    var webMethod = "https://www.impeltechnology.com/rest/api/selectQuery?query=select loginName,nombre,R6919788,nit from Proveedor where loginName = '" + email + "'&sessionId="+ sessionId +"&output=json&maxRows=3000";
+    var webMethod = "https://www.impeltechnology.com/rest/api/selectQuery?query=select loginName,nombre,R6919788,nit,id from Proveedor where Login_Conductor = '" + email + "' and Clave_Conductor = '"+pass+"'&sessionId="+ sessionId +"&output=json&maxRows=3000";
     webMethod = encodeURI(webMethod);
     var query;
     var topmost = frameModule.topmost();
@@ -105,10 +90,11 @@ async function loginValidation(sessionId,email){
         if (obj.length > 0) {
             
             appSettings.setString('nombreprov', obj[0][1]);
-            appSettings.setNumber('idVehiculo', obj[0][2]);
+//          appSettings.setNumber('idVehiculo', obj[0][2]);
             appSettings.setString('nit', obj[0][3]);
+            appSettings.setNumber('id', obj[0][4]);
 
-            topmost.navigate("home/home-page");
+            topmost.navigate("placas/placas-page");
             
         }else {
             alert("Usuario o contraseña Incorrecto");

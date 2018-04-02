@@ -1,14 +1,20 @@
-/*
-In NativeScript, a file with the same name as an XML file is known as
-a code-behind file. The code-behind is a great place to place your view
-logic, and to set up your page’s data binding.
-*/
+Number.prototype.formatMoney = function(c, d, t) {
+    var n = this,
+     c = isNaN(c = Math.abs(c)) ? 2 : c,
+     d = d == undefined ? "." : d,
+     t = t == undefined ? "," : t,
+     s = n < 0 ? "-" : "",
+     i = String(parseInt(n = Math.abs(Number(n)
+    || 0).toFixed(c))),
+     j = (j = i.length) > 3 ? j % 3 : 0;
+    return s + (j ? i.substr(0, j) + t : "") + i.substr(j).replace(/(\d{3})(?=\d)/g, "$1" + t) + (c ? d + Math.abs(n - i).toFixed(c).slice(2) :
+     "");
+   };
+   var view = require("ui/core/view");
+   var geolocation = require("nativescript-geolocation");
+   // require the plugin
+   var Directions = require("nativescript-directions").Directions;
 
-/*
-NativeScript adheres to the CommonJS specification for dealing with
-JavaScript modules. The CommonJS require() function is how you import
-JavaScript modules defined in other files.
-*/
 const DetalleViewModel = require("./detalle-view-model");
 var mapsModule = require("nativescript-google-maps-sdk");
 const detalleViewModel = new DetalleViewModel();
@@ -17,9 +23,47 @@ var view = require("ui/core/view");
 var appSettings = require('application-settings');
 const http = require("http");
 var camera = require("nativescript-camera");
+var Origen_servicio = '';
+var Destino_servicio = '';
+var id_servicio;
+var array_ciudades = [];
+var array_tMercancias = [];
+tipos_mercancia();
+Ciudades();
 
+function formateDate(date){
+    var fechaCesionFormat;
+    var year;
+    var month;
+    var day;
+   
+    var dateformat;
+   
+    if(date !== null && date !== ''){
+     fechaCesionFormat = new Date(date);
+     year = fechaCesionFormat.getFullYear();
+     month = fechaCesionFormat.getMonth() + 1;
+     day = fechaCesionFormat.getDate();
+   
+     if((day + "").length === 1){
+   
+       day = "0" + day;
+   
+     }
+     if((month + "").length === 1){
+   
+       month = "0" + month;
+   
+     }
+     dateformat =  day + "/" + (month) + "/" + year;
+     return dateformat;
+   }else{
+     dateformat = '';
+     return dateformat;
+   }
+   }
 
-function onNavigatingTo(args) {
+async function onNavigatingTo(args) {
 
      //appSettings.setNumber('numberO', args.object.items[args.index].Norden);
     
@@ -27,57 +71,84 @@ function onNavigatingTo(args) {
         var label1 = view.getViewById(page, "ofertante");
         label1.text = ofertanteName;*/
     var key = appSettings.getNumber('key', 123);
-
+        /*
+        Servicio No
+        Cliente Destino
+        Direccion Destino
+        Destino
+        Orden del Cliente
+        Tipo de Mercancia 
+        */
     var sessionId = appSettings.getString('sessionId', 'defaultValue');
     var NumeroOrden = appSettings.getNumber('numberO', 123);
-    var webMethod = "https://www.impeltechnology.com/rest/api/selectQuery?query=select R6311987,R7442986,PesoTON,Origen,fecha_y_hora_de_cargue,Destino,fecha_y_hora_de_descargue,numeros_de_entregas,Total_Costo from Servicio where Num_Servicio = " + NumeroOrden + "&sessionId="+ sessionId +"&output=json&maxRows=3000";
+    var webMethod = "https://www.impeltechnology.com/rest/api/selectQuery?query=select Num_Servicio,Cliente_Destino,Direccion_Destino,Destino,Orden_de_Servicio,R8557298,id,status from Servicio where R8476682 = " + NumeroOrden + " order by Num_Servicio desc&sessionId="+ sessionId +"&output=json&maxRows=3000";
     webMethod = encodeURI(webMethod);
     const page = args.object;
     var bindig = page.bindingContext;
     var keystatus = appSettings.getNumber('notStatus', 123);
 
-    http.request({ url: webMethod, method: "GET" }).then(function (response) {
+    await http.request({ url: webMethod, method: "GET" }).then(function (response) {
 
         var obj = response.content.toJSON();
-        
-        cliName(obj[0][0],args);
-        tipos_mercancia(obj[0][1],args);
-        origen(obj[0][3],args);
-        destino(obj[0][5],args);
-        
-        var label3 = view.getViewById(page, "vol_carga");
-        label3.text = obj[0][2];
-        
-        var label5 = view.getViewById(page, "hora_fecha");
-        label5.text = obj[0][4];
+        var items = [];
 
-        var label7 = view.getViewById(page, "hora_fecha_d");
-        label7.text = obj[0][6];
+        for (var i = 0; i < obj.length; i++) { 
+        
+            var nServicio = "No Servicio: " + obj[i][0];
+            var cDestino = "Cliente Destino: " + obj[i][1];
+            var dirDestino = "Direccion Destino: " + obj[i][2];
+            var oCliente = "Orden Cliente: " + obj[i][4];
+            var color;
 
-        var label8 = view.getViewById(page, "num_entregas");
-        label8.text = obj[0][7];
+            if (obj[i][7] === 7590913) {
+                color = "#BEF15E";               
+            } else {
+                color = "white";
+            } 
 
-        var label9 = view.getViewById(page, "ValorSer");
-        label9.text = obj[0][8];
-    
+
+            for (var k=0; k < array_ciudades.length; k++) {
+
+                if (obj[i][3] == array_ciudades[k][1]){
+                    var destino = "Destino: "+array_ciudades[k][0];     
+                }
+
+            } 
+            for (var h=0; h < array_tMercancias.length; h++) {
+
+                if (obj[i][5] == array_tMercancias[h][1]){
+                    var t_mercancia = "Tipo de Mercancia: "+array_tMercancias[h][0];     
+                }
+
+            } 
+
+            items.push({ nServicio: nServicio , cDestino: cDestino, dirDestino:dirDestino,destino:destino, oCliente:oCliente, t_mercancia:t_mercancia,Norden:obj[i][6],color: color});    
+
+        }
+        var listview = view.getViewById(page, "listview");
+        listview.items = items;
+
     }, function (e) {
 
     });
     
     var button1 = view.getViewById(page, "accept");
     var button2 = view.getViewById(page, "refuse");
-    if( key == 2) {
+    var button4 = view.getViewById(page, "map");
 
+
+    if( key == 2) {
 
         button1.visibility = "collapsed";
         button2.visibility = "collapsed";
+       // button4.visibility = "visible";
     
     } else {
         button1.visibility = "visible";
         button2.visibility = "visible";
-    
+        //button4.visibility = "visible";
+
     }
-    page.addCssFile("css/style.css");
     page.bindingContext = detalleViewModel;
 }
 
@@ -119,83 +190,72 @@ async function cliName (nombreCliente,args) {
 
     async function tipos_mercancia (idMercancia,args) {
     var sessionId = appSettings.getString('sessionId', 'defaultValue');
-    var webMethod = "https://www.impeltechnology.com/rest/api/selectQuery?query=select Nombre from Tipos_de_Mercancia where id= " + idMercancia + "&sessionId="+ sessionId +"&output=json&maxRows=3000";
+    var webMethod = "https://www.impeltechnology.com/rest/api/selectQuery?query=select name,id from grupo_de_material_ &sessionId="+ sessionId +"&output=json&maxRows=3000";
     webMethod = encodeURI(webMethod);
     var obj;
-    var name;
-    const page = args.object;
-    var bindig = page.bindingContext;
-
     await http.request({ url: webMethod, method: "GET" }).then(function (response) {
 
         obj = response.content.toJSON();
-        name = obj[0][0];
-        var label2 = view.getViewById(page, "Tipo_carga");
-        label2.text = name;
+        array_tMercancias = obj;
         
     }, function (e) {
 
     });
 
-    page.bindingContext = detalleViewModel;
     }
 
-    async function origen (idSede,args) {
-        var sessionId = appSettings.getString('sessionId', 'defaultValue');
-        var webMethod = "https://www.impeltechnology.com/rest/api/selectQuery?query=select Nombre from Ciudad where id= " + idSede + "&sessionId="+ sessionId +"&output=json&maxRows=3000";
-        webMethod = encodeURI(webMethod);
-        var obj;
-        var name;
-        const page = args.object;
-        var bindig = page.bindingContext;
-    
-        await http.request({ url: webMethod, method: "GET" }).then(function (response) {
-    
-            obj = response.content.toJSON();
-            name = obj[0][0];
-            var label4 = view.getViewById(page, "origen");
-            label4.text = name;
-            
-        }, function (e) {
-    
-        });
-    
-        page.bindingContext = detalleViewModel;
-        }
-
-        async function destino (idDestino,args) {
+    async function Ciudades () {
             var sessionId = appSettings.getString('sessionId', 'defaultValue');
-            var webMethod = "https://www.impeltechnology.com/rest/api/selectQuery?query=select Nombre from Ciudad where id= " + idDestino + "&sessionId="+ sessionId +"&output=json&maxRows=3000";
+            var webMethod = "https://www.impeltechnology.com/rest/api/selectQuery?query=select Nombre,id from Ciudad where Codigo_Ciudad=000 &sessionId="+ sessionId +"&output=json&maxRows=3000";
             webMethod = encodeURI(webMethod);
             var obj;
-            var name;
-            const page = args.object;
-            var bindig = page.bindingContext;
-        
+
             await http.request({ url: webMethod, method: "GET" }).then(function (response) {
-        
+            
                 obj = response.content.toJSON();
-                name = obj[0][0];
-                var label6 = view.getViewById(page, "destino");
-                label6.text = name;
+                array_ciudades = obj;    
                 
             }, function (e) {
         
             });
         
-            page.bindingContext = detalleViewModel;
             }
     
     function onButtonTap () {
-        alert("Aceptado");
-        var topmost = frameModule.topmost();   
-        topmost.navigate("home/home-page");
+        var sessionId = appSettings.getString('sessionId', 'defaultValue');
+        var NumeroOrden = appSettings.getNumber('numberO', 123);
+        var webMethod = "https://www.impeltechnology.com/rest/api/updateRecord?&objName=Despacho&id="+ NumeroOrden +"&useIds=false&status=Aceptado x Conductor&sessionId="+sessionId;
+        webMethod = encodeURI(webMethod);
+
+        http.request({ url: webMethod, method: "GET" }).then(function (response) {
+            
+            alert("Aceptado");
+            var topmost = frameModule.topmost();
+            topmost.navigate("home/home-page");            
+ 
+            
+        }, function (e) {
+    
+        });       
+
     }
 
     function onButtonTap1 () {
-        alert("Rechazado");
-        var topmost = frameModule.topmost();
-        topmost.navigate("home/home-page"); 
+        var sessionId = appSettings.getString('sessionId', 'defaultValue');
+        var NumeroOrden = appSettings.getNumber('numberO', 123);
+        var webMethod = "https://www.impeltechnology.com/rest/api/updateRecord?&objName=Despacho&id="+ NumeroOrden +"&useIds=false&status=Rechazado x Conductor&sessionId="+sessionId;
+        webMethod = encodeURI(webMethod);
+
+        http.request({ url: webMethod, method: "GET" }).then(function (response) {
+            
+            alert("Rechazado");
+            var topmost = frameModule.topmost();
+            topmost.navigate("home/home-page");            
+ 
+            
+        }, function (e) {
+    
+        });
 
     }   
     function onButtonTap2 () {
@@ -212,9 +272,71 @@ async function cliName (nombreCliente,args) {
             });
     }   
 
+    function planRuta(){
+
+        var origen = Origen_servicio;
+        var destino = Destino_servicio;
+    
+        var directions = new Directions();
+    
+        directions.available().then(
+          function(avail) {
+            console.log(avail ? "Yes" : "No");
+          }
+        );
+     
+        var location = geolocation.getCurrentLocation({desiredAccuracy: 3, updateDistance: 10, maximumAge: 20000, timeout: 20000}).
+        then(function(loc) {     
+            if (loc) {
+                console.log("Current location is: " + loc);
+            }
+                directions.navigate({
+                from: { // optional, default 'current location'
+                    lat: loc.latitude,
+                    lng: loc.longitude
+                },
+                to: [{ // if an Array is passed (as in this example), the last item is the destination, the addresses in between are 'waypoints'.
+                 address: origen,
+                 },
+                 {
+                 address: destino
+                 }],
+                // for iOS-specific options, see the TypeScript example below.
+                }).then(
+                function() {
+                    console.log("Maps app launched.");
+                },
+                function(error) {
+                    console.log(error);
+                }
+                );
+        }, function(e){
+            console.log("Error: " + e.message);
+        });
+    
+    
+      }
+      function onItemTap(args) {
+        var key = appSettings.getNumber('key', 123);
+        if ( key == 1) {
+        
+        alert("Para Notificar Remesas y novedades debe hacerlo desde la opcion en Transito.");    
+        
+        } else {
+        var topmost = frameModule.topmost(); 
+              
+        appSettings.setNumber('nOrdenConfirmada', args.object.items[args.index].Norden);
+        topmost.navigate("notificaciones/notificaciones-page");            
+        }        
+
+    }
+exports.planRuta = planRuta;
 exports.onButtonTap = onButtonTap;
 exports.onButtonTap1 = onButtonTap1;
 exports.onButtonTap2 = onButtonTap2;
 exports.cliName = cliName;
 exports.onNavigatingTo = onNavigatingTo;
 exports.onBack = onBack;
+exports.Ciudades = Ciudades;
+exports.tipos_mercancia = tipos_mercancia;
+exports.onItemTap = onItemTap;

@@ -4,7 +4,7 @@
 	xmlns:df="nativescript-pro-ui/dataform">
 
     <!--Add your page content here-->
-<ActionBar title="Detalle Orden de Servicio">
+<ActionBar title="Detalle Despacho">
   <ActionItem tap="onBack"
       ios.systemIcon="9" ios.position="left"
       android.systemIcon="ic_menu_back" android.position="actionBar"></ActionItem>
@@ -15,71 +15,26 @@
     <!--<Image src="~/images/icono_eko_mini.png" class="action-image"></Image> -->
 </ActionBar>
  
-	<FlexboxLayout flexDirection="column" >
-		<StackLayout orientation="horizontal" style="margin-left: 50px; margin-top: 40px;">
-			<Label text="Ofertante: " style="font-weight: bold;"/>
-			<Label id="ofertante"/>
-		</StackLayout>
-		
-		<StackLayout class="hr-light"></StackLayout>
-
-		<StackLayout orientation="horizontal" style="margin-left: 50px; margin-top: 40px;">
-			<Label text="Tipo de Carga: " style="font-weight: bold;"/>
-			<Label id="Tipo_carga" />
-		</StackLayout>
-		<StackLayout class="hr-light"></StackLayout>
-
-		<StackLayout orientation="horizontal" style="margin-left: 50px; margin-top: 40px;">
-			<Label text="Vol. Carga: " style="font-weight: bold;"/>
-			<Label id="vol_carga" />
-		</StackLayout>
-		<StackLayout class="hr-light"></StackLayout>
-		
-		<StackLayout orientation="horizontal" style="margin-left: 50px; margin-top: 40px;">
-			<Label text="Lugar. Carga: " style="font-weight: bold;"/>
-			<Label id="origen" />
-		</StackLayout>
-		<StackLayout class="hr-light"></StackLayout>
-
-		<StackLayout orientation="horizontal" style="margin-left: 50px; margin-top: 40px;">
-			<Label text="Hr/Fecha Carga: " style="font-weight: bold;"/>
-			<Label id="hora_fecha" />
-		</StackLayout>
-		<StackLayout class="hr-light"></StackLayout>
-
-		<StackLayout orientation="horizontal" style="margin-left: 50px; margin-top: 40px;">
-			<Label text="Lugar. Descarga: " style="font-weight: bold;"/>
-			<Label id="destino" />
-		</StackLayout>
-		<StackLayout class="hr-light"></StackLayout>
-
-		<StackLayout orientation="horizontal" style="margin-left: 50px; margin-top: 40px;">
-			<Label text="Hr/Fecha Descarga: " style="font-weight: bold;"/>
-			<Label id="hora_fecha_d" />
-		</StackLayout>
-		<StackLayout class="hr-light"></StackLayout>
-
-		<StackLayout orientation="horizontal" style="margin-left: 50px; margin-top: 40px;">
-			<Label text="Num Entregas: " style="font-weight: bold;"/>
-			<Label id="num_entregas" />
-		</StackLayout>
-
-		<StackLayout class="hr-light"></StackLayout>
-
-		<StackLayout orientation="horizontal" style="margin-left: 50px; margin-top: 40px;">
-			<Label text="Valor del Servicio: " style="font-weight: bold;"/>
-			<Label id="ValorSer" />
-		</StackLayout>
-		
-		<StackLayout class="hr-light"></StackLayout>
-
-		<StackLayout orientation="horizontal" style="margin-top: 40px;">
-		
-		<Button id="accept" text="Aceptar" tap="onButtonTap" class="btn"  color="white" backgroundColor="#023e56"/>
-		<Button id="refuse" text="Rechazar" tap="onButtonTap1" class="btn"  backgroundColor="#023e56" color="white"/>
-		<Button id="cam" text="foto de cumplido" tap="onButtonTap2" class="btn"  backgroundColor="#023e56" color="white"/>
-
-		</StackLayout>
-
-	</FlexboxLayout>
+<FlexboxLayout flexDirection="column">
+        <GridLayout style="height: 15%; text-align: center;" align="center" backgroundColor="#023e56">
+        <Label color="white" text="Destalle Despacho" class="list-group-item-heading" verticalAlignment="center" />
+        </GridLayout>
+		<GridLayout style="height: 60%">
+			<ListView id="listview" class="list-group" itemTap="onItemTap" style="height:1250px" >
+				<ListView.itemTemplate>
+                    <StackLayout flexDirection="row" class="list-group-item" id="servC" backgroundColor="{{ color }}">
+                        <Label text="{{ nServicio }}" />                        
+                        <Label text="{{ cDestino }}" />
+                        <Label text="{{ dirDestino }}" />
+                        <Label text="{{ destino }}" />
+                        <Label text="{{ oCliente }}" />
+                        <Label text="{{ t_mercancia }}" />
+                    </StackLayout>
+				</ListView.itemTemplate>
+			</ListView>
+		</GridLayout>
+		<Button id="accept" text="Aceptar" tap="onButtonTap" color="white" backgroundColor="#023e56"/>
+		<Button id="refuse" text="Rechazar" tap="onButtonTap1" backgroundColor="#023e56" color="white"/>
+		<Button id="map" visibility="collapsed" text="Plan de Ruta" tap="planRuta"  backgroundColor="#023e56" color="white"/>
+    </FlexboxLayout>
 </Page>

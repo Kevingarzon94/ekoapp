@@ -1,9 +1,9 @@
 {
-	"time": "Tue Feb 13 2018 16:13:45 GMT-0500 (-05)",
+	"time": "Wed Mar 28 2018 03:51:06 GMT-0500 (Hora est. Pacífico, Sudamérica)",
 	"nativePlatformStatus": "3",
 	"bundle": false,
-	"release": false,
+	"release": true,
 	"changesRequireBuild": false,
 	"projectFileHash": "db0ac3b8fc54b2ebc949aee59f6228c70c3ce65c704ba8d445167cfec9cd6e32",
-	"changesRequireBuildTime": "Tue Feb 13 2018 15:20:38 GMT-0500 (-05)"
+	"changesRequireBuildTime": "Wed Mar 28 2018 03:44:08 GMT-0500 (Hora est. Pacífico, Sudamérica)"
 }

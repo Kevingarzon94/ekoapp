@@ -1,186 +1,190 @@
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/bundle-config.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/app.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/vendor-platform.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/vendor.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/ordenServicio/ordens-view-model.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/ordenServicio/ordens-page.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/perfil/perfil-page.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/perfil/perfil-view-model.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/notificaciones/notificaciones-view-model.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/notificaciones/notificaciones-page.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/login/login-view-model.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/login/login-page.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/pagos/pagos-view-model.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/pagos/pagos-page.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/detalleNotificaciones/detalleN-view-model.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/detalleNotificaciones/detalleN-page.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/home/home-view-model.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/home/home-page.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/detalleos/detalle-view-model.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/detalleos/detalle-page.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/nativescript-camera/camera.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/nativescript-camera/camera.common.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/nativescript-google-maps-sdk/map-view.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/nativescript-google-maps-sdk/map-view-common.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/bundle-entry-points.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/platform/platform.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/http/http.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/http/http-request/http-request-common.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/http/http-request/http-request.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/utils/types.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/utils/debug.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/utils/utils-common.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/utils/utils.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/utils/lazy.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/utils/number-utils.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/utils/module-merge.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/fetch/fetch.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/application-settings/application-settings-common.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/application-settings/application-settings.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/file-system/file-system.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/file-system/file-system-access.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/globals/globals.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/globals/decorators.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/connectivity/connectivity.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/css/parser.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/css/index.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/css/lib/parse/index.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/border/border.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/enums/enums.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/proxy-view-container/proxy-view-container.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/layouts/layout-base-common.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/layouts/layout-base.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/layouts/layout.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/layouts/absolute-layout/absolute-layout-common.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/layouts/absolute-layout/absolute-layout.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/layouts/wrap-layout/wrap-layout-common.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/layouts/wrap-layout/wrap-layout.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/layouts/stack-layout/stack-layout-common.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/layouts/stack-layout/stack-layout.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/layouts/flexbox-layout/flexbox-layout.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/layouts/flexbox-layout/flexbox-layout-common.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/layouts/grid-layout/grid-layout.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/layouts/grid-layout/grid-layout-common.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/layouts/dock-layout/dock-layout.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/layouts/dock-layout/dock-layout-common.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/core/properties/properties.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/core/view-base/view-base.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/core/dependency-observable/dependency-observable.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/core/view/view-common.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/core/view/view.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/core/bindable/bindable.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/core/weak-event-listener/weak-event-listener.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/scroll-view/scroll-view-common.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/scroll-view/scroll-view.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/progress/progress-common.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/progress/progress.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/search-bar/search-bar-common.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/search-bar/search-bar.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/repeater/repeater.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/activity-indicator/activity-indicator-common.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/activity-indicator/activity-indicator.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/transition/slide-transition.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/transition/fade-transition.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/transition/flip-transition.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/transition/transition.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/page/page.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/page/page-common.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/gestures/gestures.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/gestures/gestures-common.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/label/label.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/html-view/html-view-common.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/html-view/html-view.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/time-picker/time-picker.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/time-picker/time-picker-common.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/builder/binding-builder.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/builder/builder.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/builder/component-builder/component-builder.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/frame/frame-common.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/frame/fragment.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/frame/activity.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/frame/frame.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/frame/fragment.transitions.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/date-picker/date-picker-common.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/date-picker/date-picker.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/animation/keyframe-animation.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/animation/animation-common.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/animation/animation.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/image/image.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/image/image-common.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/placeholder/placeholder.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/text-base/text-base-common.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/text-base/text-base.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/list-view/list-view-common.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/list-view/list-view.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/segmented-bar/segmented-bar.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/segmented-bar/segmented-bar-common.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/list-picker/list-picker.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/list-picker/list-picker-common.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/content-view/content-view.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/dialogs/dialogs.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/dialogs/dialogs-common.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/editable-text-base/editable-text-base.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/editable-text-base/editable-text-base-common.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/switch/switch-common.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/switch/switch.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/slider/slider-common.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/slider/slider.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/text-field/text-field-common.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/text-field/text-field.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/button/button.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/button/button-common.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/web-view/web-view-common.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/web-view/web-view.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/image-cache/image-cache.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/image-cache/image-cache-common.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/action-bar/action-bar.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/action-bar/action-bar-common.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/text-view/text-view.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/styling/background.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/styling/background-common.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/styling/style-scope.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/styling/style-properties.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/styling/font.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/styling/converters.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/styling/font-common.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/styling/css-animation-parser.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/styling/css-selector/css-selector.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/styling/style/style.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/tab-view/tab-view.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/tab-view/tab-view-common.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/image-asset/image-asset-common.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/image-asset/image-asset.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/matrix/matrix.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/css-value/index.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/text/text.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/text/formatted-string.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/text/span.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/trace/trace.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/color/color-common.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/color/known-colors.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/color/color.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/console/console.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/profiling/profiling.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/debugger/devtools-elements.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/debugger/dom-node.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/debugger/devtools-elements.common.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/debugger/debugger.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/xhr/xhr.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/image-source/image-source.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/xml/xml.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/fps-meter/fps-meter.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/fps-meter/fps-native.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/timer/timer.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/application/application-common.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/application/application.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/nativescript-geolocation/geolocation.common.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/nativescript-geolocation/geolocation.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/nativescript-permissions/permissions.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/nativescript-directions/directions.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/nativescript-directions/directions.common.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/nativescript-pro-ui/scripts/eula-prompt.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/nativescript-loading-indicator/loading-indicator.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/nativescript-loading-indicator/src/interfaces.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/nativescript-loading-indicator/src/android/progress-dialog.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/nativescript-loading-indicator/src/ios/mbprogress-hud.js
-/home/kevin/appekoConductor/platforms/android/app/src/main/assets/app/tns_modules/nativescript-appavailability/appavailability.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\app.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\bundle-config.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\vendor-platform.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\vendor.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\detalleNotificaciones\detalleN-page.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\detalleNotificaciones\detalleN-view-model.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\detalleos\detalle-page.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\detalleos\detalle-view-model.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\home\home-page.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\home\home-view-model.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\login\login-page.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\login\login-view-model.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\notificaciones\notificaciones-page.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\notificaciones\notificaciones-view-model.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\novedades\notificaciones-page.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\novedades\notificaciones-view-model.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\ordenServicio\ordens-page.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\ordenServicio\ordens-view-model.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\pagos\pagos-page.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\pagos\pagos-view-model.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\perfil\perfil-page.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\perfil\perfil-view-model.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\placas\placas-page.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\placas\placas-view-model.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\nativescript-appavailability\appavailability.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\nativescript-camera\camera.common.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\nativescript-camera\camera.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\nativescript-directions\directions.common.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\nativescript-directions\directions.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\nativescript-geolocation\geolocation.common.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\nativescript-geolocation\geolocation.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\nativescript-google-maps-sdk\map-view-common.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\nativescript-google-maps-sdk\map-view.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\nativescript-loading-indicator\loading-indicator.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\nativescript-loading-indicator\src\interfaces.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\nativescript-loading-indicator\src\android\progress-dialog.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\nativescript-loading-indicator\src\ios\mbprogress-hud.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\nativescript-permissions\permissions.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\nativescript-pro-ui\scripts\eula-prompt.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\bundle-entry-points.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\application\application-common.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\application\application.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\application-settings\application-settings-common.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\application-settings\application-settings.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\color\color-common.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\color\color.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\color\known-colors.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\connectivity\connectivity.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\console\console.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\css\index.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\css\parser.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\css\lib\parse\index.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\css-value\index.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\debugger\debugger.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\debugger\devtools-elements.common.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\debugger\devtools-elements.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\debugger\dom-node.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\fetch\fetch.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\file-system\file-system-access.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\file-system\file-system.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\fps-meter\fps-meter.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\fps-meter\fps-native.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\globals\decorators.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\globals\globals.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\http\http.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\http\http-request\http-request-common.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\http\http-request\http-request.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\image-asset\image-asset-common.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\image-asset\image-asset.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\image-source\image-source.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\matrix\matrix.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\platform\platform.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\profiling\profiling.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\text\formatted-string.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\text\span.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\text\text.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\timer\timer.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\trace\trace.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\ui\action-bar\action-bar-common.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\ui\action-bar\action-bar.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\ui\activity-indicator\activity-indicator-common.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\ui\activity-indicator\activity-indicator.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\ui\animation\animation-common.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\ui\animation\animation.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\ui\animation\keyframe-animation.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\ui\border\border.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\ui\builder\binding-builder.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\ui\builder\builder.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\ui\builder\component-builder\component-builder.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\ui\button\button-common.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\ui\button\button.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\ui\content-view\content-view.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\ui\core\bindable\bindable.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\ui\core\dependency-observable\dependency-observable.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\ui\core\properties\properties.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\ui\core\view\view-common.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\ui\core\view\view.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\ui\core\view-base\view-base.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\ui\core\weak-event-listener\weak-event-listener.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\ui\date-picker\date-picker-common.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\ui\date-picker\date-picker.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\ui\dialogs\dialogs-common.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\ui\dialogs\dialogs.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\ui\editable-text-base\editable-text-base-common.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\ui\editable-text-base\editable-text-base.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\ui\enums\enums.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\ui\frame\activity.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\ui\frame\fragment.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\ui\frame\fragment.transitions.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\ui\frame\frame-common.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\ui\frame\frame.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\ui\gestures\gestures-common.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\ui\gestures\gestures.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\ui\html-view\html-view-common.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\ui\html-view\html-view.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\ui\image\image-common.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\ui\image\image.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\ui\image-cache\image-cache-common.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\ui\image-cache\image-cache.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\ui\label\label.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\ui\layouts\layout-base-common.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\ui\layouts\layout-base.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\ui\layouts\layout.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\ui\layouts\absolute-layout\absolute-layout-common.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\ui\layouts\absolute-layout\absolute-layout.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\ui\layouts\dock-layout\dock-layout-common.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\ui\layouts\dock-layout\dock-layout.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\ui\layouts\flexbox-layout\flexbox-layout-common.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\ui\layouts\flexbox-layout\flexbox-layout.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\ui\layouts\grid-layout\grid-layout-common.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\ui\layouts\grid-layout\grid-layout.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\ui\layouts\stack-layout\stack-layout-common.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\ui\layouts\stack-layout\stack-layout.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\ui\layouts\wrap-layout\wrap-layout-common.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\ui\layouts\wrap-layout\wrap-layout.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\ui\list-picker\list-picker-common.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\ui\list-picker\list-picker.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\ui\list-view\list-view-common.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\ui\list-view\list-view.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\ui\page\page-common.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\ui\page\page.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\ui\placeholder\placeholder.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\ui\progress\progress-common.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\ui\progress\progress.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\ui\proxy-view-container\proxy-view-container.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\ui\repeater\repeater.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\ui\scroll-view\scroll-view-common.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\ui\scroll-view\scroll-view.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\ui\search-bar\search-bar-common.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\ui\search-bar\search-bar.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\ui\segmented-bar\segmented-bar-common.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\ui\segmented-bar\segmented-bar.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\ui\slider\slider-common.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\ui\slider\slider.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\ui\styling\background-common.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\ui\styling\background.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\ui\styling\converters.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\ui\styling\css-animation-parser.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\ui\styling\font-common.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\ui\styling\font.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\ui\styling\style-properties.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\ui\styling\style-scope.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\ui\styling\css-selector\css-selector.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\ui\styling\style\style.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\ui\switch\switch-common.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\ui\switch\switch.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\ui\tab-view\tab-view-common.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\ui\tab-view\tab-view.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\ui\text-base\text-base-common.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\ui\text-base\text-base.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\ui\text-field\text-field-common.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\ui\text-field\text-field.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\ui\text-view\text-view.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\ui\time-picker\time-picker-common.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\ui\time-picker\time-picker.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\ui\transition\fade-transition.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\ui\transition\flip-transition.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\ui\transition\slide-transition.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\ui\transition\transition.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\ui\web-view\web-view-common.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\ui\web-view\web-view.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\utils\debug.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\utils\lazy.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\utils\module-merge.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\utils\number-utils.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\utils\types.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\utils\utils-common.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\utils\utils.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\xhr\xhr.js
+C:\Users\pc\Documents\Nueva carpeta\appekoConductor\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\xml\xml.js

@@ -1,0 +1,28 @@
+[
+    {
+        "outputFile": "C:\\Users\\pc\\Documents\\Nueva carpeta\\appekoConductor\\platforms\\android\\app\\build\\intermediates\\incremental\\mergeF0F1F2F3ReleaseResources\\merged.dir\\values-hdpi-v4\\values-hdpi-v4.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endLine": 6,
+                    "endColumn": 13,
+                    "endOffset": 327
+                },
+                "from": {
+                    "file": "C:\\Users\\pc\\.android\\build-cache\\2a69a875b15d2089b7d32b507dddef11677edb83\\output\\res\\values-hdpi-v4\\values-hdpi-v4.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endLine": 6,
+                        "endColumn": 13,
+                        "endOffset": 327
+                    }
+                }
+            }
+        ]
+    }
+]
